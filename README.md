@@ -110,11 +110,11 @@ Generic coding AI agents generate "vibe-coded" toy mockups with identical purple
 - **Bespoke Domain Realism**: For FinTech, it builds dense ledger tables with status chips; for E-Commerce, it generates sticky buy bars and faceted filters; for DevTools, it integrates interactive CLI terminals and cluster health gauges.
 - **Total Redesign Morphing**: When a user asks to redesign an existing website, the agent extracts the authentic data entities, queries matching archetypes from the 1,000+ catalog, and completely rebuilds the interface to match their exact needs.
 
-### Category Breakdown (1,135 Templates across 13 Categories)
+### Category Breakdown (1,425 Templates across 15 Categories)
 
 All templates are indexed in [`templates/registry/templates-catalog.json`](templates/registry/templates-catalog.json) and queryable via CLI:
 
-| Category | Templates | Primary Figma / Web Sources | Key Archetypes Covered |
+| Category | Templates | Primary Figma / Open Source Sources | Key Archetypes Covered |
 |---|---|---|---|
 | **Hero Sections** | **105** | Untitled UI, Webflow Winners, Dribbble | Split Hero, Aurora Bento, 3D App Mockup, Terminal, Waitlist |
 | **Navigation & Headers** | **65** | shadcn/ui, Flowbite Pro, Tailwind UI | Floating Island, Multi-column Mega Menu, Command Palette ⌘K |
@@ -129,6 +129,8 @@ All templates are indexed in [`templates/registry/templates-catalog.json`](templ
 | **Portfolios & Studios** | **75** | Webflow UX Portfolios, Dribbble Top | Full-Screen Project Reel, Editorial Kinetic Typography, Honors |
 | **Developer & API Docs** | **65** | Stripe/Vercel Clones, shadcn Docs | Interactive API Playground, 3-Column Endpoint Reference |
 | **Interactive Primitives** | **105** | shadcn Primitives, Radix, Apple HIG | Tactile Magnetic Buttons, Frosted Acrylic Cards, Dialog Modals |
+| **Bootstrap 5 Grid & Layouts** | **110** | Bootstrap 5 Core (`twbs/bootstrap`) | 12-Column Responsive Flex Container, Offcanvas Navbars, Floating Label Forms, Hybrid CSS Token Accordions |
+| **Figma Community UI Kits** | **140** | Figma Community UI Kit Library | Untitled UI Design System, Material 3 Expressive, iOS 18 Glass HUD, Flowbite Pro Admin, SaaS Dark Bento Wireframe |
 
 ---
 
@@ -145,6 +147,7 @@ All standalone templates in `templates/` are production-ready, fully responsive,
 | **Kinetic Minimal Hero** | [`templates/heroes/kinetic-minimal-hero.html`](templates/heroes/kinetic-minimal-hero.html) | Creative Agency Editorial Typography |
 | **Floating Island Navbar** | [`templates/navigation/floating-island-navbar.html`](templates/navigation/floating-island-navbar.html) | Glassmorphic Island with Search Shortcut |
 | **Dynamic Mega Menu** | [`templates/navigation/dynamic-mega-menu.html`](templates/navigation/dynamic-mega-menu.html) | Multi-column Product Flyout |
+| **Bootstrap Offcanvas Navbar** | [`templates/navigation/bootstrap-offcanvas-navbar.html`](templates/navigation/bootstrap-offcanvas-navbar.html) | Bootstrap 5 Offcanvas Drawer + Glass Navbar |
 | **Interactive Bento Grid** | [`templates/features/interactive-bento-grid.html`](templates/features/interactive-bento-grid.html) | Asymmetrical 12-col Bento Layout |
 | **Scrollytelling Showcase** | [`templates/features/scrollytelling-showcase.html`](templates/features/scrollytelling-showcase.html) | Progressive Disclosure Timeline |
 | **Analytics Dashboard** | [`templates/dashboards/analytics-bento-dashboard.html`](templates/dashboards/analytics-bento-dashboard.html) | Executive SaaS KPI & Telemetry Console |
@@ -152,6 +155,8 @@ All standalone templates in `templates/` are production-ready, fully responsive,
 | **Card Variants** | [`templates/components/card-variants.html`](templates/components/card-variants.html) | Acrylic Glass & Gradient Border Spotlight |
 | **Feedback States** | [`templates/components/feedback-states.html`](templates/components/feedback-states.html) | Skeleton Shimmer, Empty States, Toasts |
 | **Form Wizard Flow** | [`templates/components/form-wizard-flows.html`](templates/components/form-wizard-flows.html) | Low-friction 3-step Onboarding Form |
+| **Floating Label Forms** | [`templates/components/floating-label-forms.html`](templates/components/floating-label-forms.html) | Bootstrap 5 Floating Labels & Dynamic Validation |
+| **Bootstrap Hybrid Components** | [`templates/components/bootstrap-hybrid-components.html`](templates/components/bootstrap-hybrid-components.html) | Modern Token-skinned Bootstrap 5 Accordions, Modals & Toast Stack |
 | **3-Tier Design Tokens** | [`templates/design-tokens/tokens.json`](templates/design-tokens/tokens.json) | Figma Variables (Primitive & Semantic) |
 | **Tailwind Preset** | [`templates/design-tokens/tailwind.config.preset.js`](templates/design-tokens/tailwind.config.preset.js) | Plug-and-play Tailwind Theme Config |
 | **Theme CSS** | [`templates/design-tokens/theme.css`](templates/design-tokens/theme.css) | Standalone CSS Variables & Fluid Math |
@@ -163,12 +168,13 @@ All standalone templates in `templates/` are production-ready, fully responsive,
 The repository includes a zero-dependency Node.js CLI tool:
 
 ```bash
-# Search across 1,135 Figma Community templates by keyword or domain
+# Search across 1,425 Figma Community & Bootstrap templates by keyword or domain
 npx design-ux-ultra search "fintech"
+npx design-ux-ultra search "bootstrap"
 npx design-ux-ultra search "bento"
 npx design-ux-ultra search "dashboard"
 
-# View all 13 categories and counts
+# View all 15 categories and counts
 npx design-ux-ultra categories
 
 # List core standalone templates
@@ -176,6 +182,7 @@ npx design-ux-ultra list
 
 # Scaffold an archetype into your project
 npx design-ux-ultra scaffold saas-landing public/index.html
+npx design-ux-ultra scaffold bootstrap-offcanvas components/Navbar.html
 npx design-ux-ultra scaffold bento-hero components/Hero.html
 
 # Audit any webpage/component against UX heuristics & accessibility
@@ -193,6 +200,8 @@ npx design-ux-ultra install antigravity   # or claude / cursor
 ## 📚 Specialized Reference Documentation
 
 Load specialized guides on-demand for deep implementation details:
+- [**`references/1000-templates-directory.md`**](references/1000-templates-directory.md) &mdash; 1,425 Figma Community & Bootstrap 5 templates directory and Anti-Vibe-Coding engineering framework.
+- [**`references/bootstrap-grid-components.md`**](references/bootstrap-grid-components.md) &mdash; Bootstrap 5 12-column responsive flex grid, `--bs-*` token bridges, offcanvas drawers, and floating labels.
 - [**`references/dribbble-visual-engine.md`**](references/dribbble-visual-engine.md) &mdash; Color lighting, aurora gradients, bento grids, glassmorphism specs.
 - [**`references/webflow-interaction-matrix.md`**](references/webflow-interaction-matrix.md) &mdash; GSAP ScrollTrigger recipes, magnetic button physics, fluid typography math.
 - [**`references/mockplus-ux-heuristics.md`**](references/mockplus-ux-heuristics.md) &mdash; Psychological UX laws, information architecture, feedback states.

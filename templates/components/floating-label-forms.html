@@ -1,0 +1,46 @@
+<!-- Floating Label Forms & Input Groups (Bootstrap 5 + Figma Kit) - Design UX Ultra -->
+<div class="card bg-dark border-secondary rounded-4 p-4 p-lg-5 max-w-xl mx-auto shadow-lg">
+  <div class="mb-4">
+    <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill mb-2">Ergonomic Forms</span>
+    <h3 class="h5 fw-bold text-white">Workspace Configuration</h3>
+    <p class="text-secondary small">Floating labels eliminate label drift and guide users through complex inputs.</p>
+  </div>
+
+  <form>
+    <!-- Floating Email -->
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control bg-dark text-white border-secondary rounded-3" id="workEmail" placeholder="name@company.com" required>
+      <label for="workEmail" class="text-secondary">Work Email Address</label>
+    </div>
+
+    <!-- Domain Input Group with Floating Label -->
+    <div class="input-group mb-3">
+      <div class="form-floating flex-grow-1">
+        <input type="text" class="form-control bg-dark text-white border-secondary rounded-start-3" id="workspaceSlug" placeholder="acme" required>
+        <label for="workspaceSlug" class="text-secondary">Workspace Subdomain</label>
+      </div>
+      <span class="input-group-text bg-dark text-secondary border-secondary font-monospace rounded-end-3">.hyperplane.dev</span>
+    </div>
+
+    <!-- Floating Select -->
+    <div class="form-floating mb-3">
+      <select class="form-select bg-dark text-white border-secondary rounded-3" id="primaryFramework" aria-label="Primary Frontend Framework">
+        <option value="bootstrap" selected>Bootstrap 5 (12-Column Grid &amp; Utilities)</option>
+        <option value="tailwind">Tailwind CSS (Utility Tokens)</option>
+        <option value="react">React / Next.js (shadcn/ui)</option>
+      </select>
+      <label for="primaryFramework" class="text-secondary">Frontend Architecture</label>
+    </div>
+
+    <!-- Switch Checkbox -->
+    <div class="form-check form-switch mb-4">
+      <input class="form-check-input" type="checkbox" role="switch" id="telemetrySwitch" checked>
+      <label class="form-check-label text-secondary small" for="telemetrySwitch">Enable real-time edge telemetry and canary rollouts</label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary w-100 rounded-pill py-2.5 fw-semibold shadow-sm">
+      Complete Provisioning &rarr;
+    </button>
+  </form>
+</div>

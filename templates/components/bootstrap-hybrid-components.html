@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Hybrid Components - Design UX Ultra</title>
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bs-body-font-family: 'Plus Jakarta Sans', sans-serif;
+      --bs-body-bg: #030712;
+      --bs-body-color: #f8fafc;
+      --bs-primary: #6366f1;
+      --bs-primary-rgb: 99, 102, 241;
+      --bs-border-color: rgba(255, 255, 255, 0.08);
+      --bs-card-bg: #090d16;
+    }
+    .font-monospace { font-family: 'JetBrains Mono', monospace !important; }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .btn-primary {
+      background-color: var(--bs-primary);
+      border-color: var(--bs-primary);
+      box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.35);
+    }
+    .btn-primary:hover {
+      background-color: #4f46e5;
+      border-color: #4f46e5;
+    }
+  </style>
+</head>
+<body class="py-5">
+
+  <div class="container max-w-7xl">
+    
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <span class="badge rounded-pill px-3 py-2 bg-primary-subtle text-primary border border-primary-subtle mb-3">
+        Bootstrap 5 + Figma Community UI Kit
+      </span>
+      <h1 class="display-5 fw-bold text-white tracking-tight">Enterprise Component System</h1>
+      <p class="text-secondary max-w-xl mx-auto">12-column grid alignment, accessible ARIA components, and fluid tokens.</p>
+    </div>
+
+    <!-- 1. 12-Column Responsive Card Grid -->
+    <div class="row g-4 mb-5">
+      <!-- Card 1 (4 cols) -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card glass-card rounded-4 p-4 h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-indigo-subtle text-indigo-400 border border-indigo-subtle rounded-pill">01 / Telemetry</span>
+            <span class="font-monospace text-success small">&bull; ONLINE</span>
+          </div>
+          <h3 class="h5 fw-bold text-white">Edge Request Volume</h3>
+          <div class="display-6 fw-bold text-white my-3">4.8M <span class="fs-6 text-secondary fw-normal">/ day</span></div>
+          <p class="text-secondary small mb-0">Autonomous load balancing across multi-region edge nodes.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 (4 cols) -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card glass-card rounded-4 p-4 h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-info-subtle text-info border border-info-subtle rounded-pill">02 / Performance</span>
+            <span class="font-monospace text-info small">P99 AUDIT</span>
+          </div>
+          <h3 class="h5 fw-bold text-white">Latency Median</h3>
+          <div class="display-6 fw-bold text-info my-3">8.4<span class="fs-6 text-secondary fw-normal">ms</span></div>
+          <p class="text-secondary small mb-0">Sub-second data serialization with zero connection stalls.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 (4 cols) -->
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="card glass-card rounded-4 p-4 h-100">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill">03 / Reliability</span>
+            <span class="font-monospace text-success small">SLA 100%</span>
+          </div>
+          <h3 class="h5 fw-bold text-white">Service Uptime</h3>
+          <div class="display-6 fw-bold text-success my-3">99.999%</div>
+          <p class="text-secondary small mb-0">Automated zero-downtime rollover failover active.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Responsive Data Table -->
+    <div class="card glass-card rounded-4 overflow-hidden mb-5">
+      <div class="card-header bg-transparent border-secondary p-4 d-flex justify-content-between align-items-center">
+        <div>
+          <h4 class="h6 fw-bold text-white mb-1">Active Cluster Instances</h4>
+          <p class="text-secondary small mb-0 font-monospace">Synchronized across 32 regional zones</p>
+        </div>
+        <button class="btn btn-outline-light btn-sm rounded-pill px-3 font-monospace" data-bs-toggle="modal" data-bs-target="#deployModal">
+          + New Cluster
+        </button>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-dark table-hover align-middle mb-0">
+          <thead class="table-dark text-secondary text-uppercase font-monospace" style="font-size: 0.75rem;">
+            <tr>
+              <th scope="col" class="py-3 px-4">Instance ID</th>
+              <th scope="col" class="py-3 px-4">Region</th>
+              <th scope="col" class="py-3 px-4">Health Status</th>
+              <th scope="col" class="py-3 px-4 text-end">Latency</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 0.875rem;">
+            <tr>
+              <td class="py-3 px-4 fw-semibold text-white font-monospace">cluster-ap-se-1</td>
+              <td class="py-3 px-4 text-secondary">Singapore (AWS ap-southeast-1)</td>
+              <td class="py-3 px-4"><span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2.5 py-1">Optimal</span></td>
+              <td class="py-3 px-4 text-end text-info font-monospace">18ms</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 fw-semibold text-white font-monospace">cluster-eu-west-1</td>
+              <td class="py-3 px-4 text-secondary">Frankfurt (GCP europe-west3)</td>
+              <td class="py-3 px-4"><span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2.5 py-1">Optimal</span></td>
+              <td class="py-3 px-4 text-end text-info font-monospace">12ms</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3. Accordion FAQ -->
+    <div class="card glass-card rounded-4 p-4 mb-5">
+      <h4 class="h6 fw-bold text-white mb-3">Frequently Asked Questions (Accordion)</h4>
+      <div class="accordion accordion-flush" id="bootstrapFaq">
+        <div class="accordion-item bg-transparent border-secondary">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-transparent text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+              How does Bootstrap 5 integrate with Figma design tokens?
+            </button>
+          </h2>
+          <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#bootstrapFaq">
+            <div class="accordion-body text-secondary small">
+              Bootstrap 5 natively exposes CSS custom properties on <code>:root</code>. By mapping our 3-tier tokens directly to <code>--bs-primary</code>, <code>--bs-body-bg</code>, and <code>--bs-border-radius</code>, Bootstrap components seamlessly inherit the exact same design language as our Tailwind presets.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal fade" id="deployModal" tabindex="-1" aria-labelledby="deployModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white border-secondary rounded-4 shadow-lg">
+        <div class="modal-header border-secondary p-4">
+          <h5 class="modal-title fw-bold" id="deployModalLabel">Deploy Regional Cluster</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control bg-dark text-white border-secondary" id="clusterName" placeholder="us-east-cluster">
+            <label for="clusterName" class="text-secondary">Cluster Identifier</label>
+          </div>
+          <div class="form-floating">
+            <select class="form-select bg-dark text-white border-secondary" id="regionSelect">
+              <option selected>US East (Virginia)</option>
+              <option value="1">Europe (Frankfurt)</option>
+              <option value="2">Asia Pacific (Singapore)</option>
+            </select>
+            <label for="regionSelect" class="text-secondary">Target Region</label>
+          </div>
+        </div>
+        <div class="modal-footer border-secondary p-4">
+          <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary rounded-pill px-4" data-bs-dismiss="modal">Confirm Deployment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

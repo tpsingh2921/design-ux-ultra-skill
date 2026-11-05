@@ -1,6 +1,6 @@
 # 1,000+ Figma Community Templates & Anti-Vibe-Coding Architecture
 
-This directory details the catalog of **1,135 production templates and component patterns** synthesized from top-tier, free Figma Community UI kits (Untitled UI, shadcn/ui, Flowbite, TailAdmin, Horizon UI, Relume, Cruip, Apple HIG, and Material 3) and codifies the **Anti-Vibe-Coding Engineering Framework**.
+This directory details the catalog of **1,425 production templates and component patterns** synthesized from top-tier, free Figma Community UI kits (Untitled UI, shadcn/ui, Flowbite, TailAdmin, Horizon UI, Relume, Cruip, Apple HIG, and Material 3), Bootstrap 5 core grid archetypes (`twbs/bootstrap`), and codifies the **Anti-Vibe-Coding Engineering Framework**.
 
 ---
 
@@ -36,15 +36,15 @@ When asked to **redesign** an existing website or application:
 
 ### Rule 3: Ergonomic 6-State Component Matrices
 Every interactive component must declare styles for the complete 6-state variant matrix:
-`default` &bull; `hover` &bull; `active` &bull; `focus-visible` &bull; `disabled` &bull; `loading`.
+`default` • `hover` • `active` • `focus-visible` • `disabled` • `loading`.
 
 ---
 
-## 3. Catalog Breakdown (1,135 Templates across 13 Categories)
+## 3. Catalog Breakdown (1,425 Templates across 15 Categories)
 
 All templates are indexed in [`templates/registry/templates-catalog.json`](../templates/registry/templates-catalog.json) and queryable via CLI (`node bin/design-ux-ultra.js search <keyword>`):
 
-| Category | Code | Count | Key Archetypes & Figma Inspirations |
+| Category | Code | Count | Key Archetypes & Figma / Open Source Inspirations |
 |---|---|---|---|
 | **Hero Sections** | `hero` | **105** | Split Hero, Aurora Bento, 3D Perspective App Window, Kinetic Minimal, Interactive Terminal, Waitlist Capture |
 | **Navigation & Headers** | `nav` | **65** | Floating Island Navbar, Dynamic Multi-column Mega Menu, Command Palette `⌘K`, Breadcrumb Bar, Collapsible Sidebar |
@@ -59,6 +59,8 @@ All templates are indexed in [`templates/registry/templates-catalog.json`](../te
 | **Portfolios & Studios** | `portfolio` | **75** | Full-Screen Project Reel, Editorial Kinetic Typography, Client Honors Grid, Interactive Curriculum Timeline |
 | **Developer & API Docs** | `docs` | **65** | Interactive API Playground, 3-Column Endpoint Reference, Code Syntax Tabs, SDK Quickstart Stepper |
 | **Interactive Primitives** | `component` | **105** | Tactile Magnetic Buttons, Frosted Acrylic Cards, Dialog Modals, Toast Systems, Segmented Spring Controls |
+| **Bootstrap 5 Grid & Layouts** | `bootstrap-layout` | **110** | 12-Column Responsive Flex Container, Offcanvas Navbars, Floating Label Forms, Hybrid CSS Token Accordions, Sticky Sidebars |
+| **Figma Community UI Kits** | `figma-community` | **140** | Untitled UI Design System, Material 3 Expressive, iOS 18 Glass HUD, Flowbite Pro Admin, SaaS Dark Bento Wireframe |
 
 ---
 

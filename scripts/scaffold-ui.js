@@ -19,7 +19,10 @@ const TEMPLATES_MAP = {
   'wizard': 'templates/components/form-wizard-flows.html',
   'tokens': 'templates/design-tokens/tokens.json',
   'tailwind-preset': 'templates/design-tokens/tailwind.config.preset.js',
-  'theme-css': 'templates/design-tokens/theme.css'
+  'theme-css': 'templates/design-tokens/theme.css',
+  'bootstrap-components': 'templates/components/bootstrap-hybrid-components.html',
+  'bootstrap-nav': 'templates/navigation/bootstrap-offcanvas-navbar.html',
+  'floating-forms': 'templates/components/floating-label-forms.html'
 };
 
 function scaffold(templateKey, outputPath) {

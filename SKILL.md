@@ -1,18 +1,18 @@
 ---
 name: design-ux-ultra-skill
-description: "World-class UI/UX design engine for coding AI agents with 1,000+ Figma Community templates. Eliminates vibe-coded AI slop and creates authentic, bespoke, high-converting websites and applications. Synthesizes trending Dribbble visual aesthetics, award-winning Made in Webflow kinetic interactions, Mockplus UX wireframing heuristics, and Figma Community auto-layout token design systems."
-version: 1.1.0
+description: "World-class UI/UX design engine for coding AI agents with 1,425+ Figma Community & Bootstrap 5 templates. Eliminates vibe-coded AI slop and creates authentic, bespoke, high-converting websites and applications. Synthesizes trending Dribbble visual aesthetics, award-winning Made in Webflow kinetic interactions, Mockplus UX wireframing heuristics, Bootstrap 5 responsive grid layouts, and Figma Community auto-layout token design systems."
+version: 1.2.0
 author: "Tejpal Singh Jodha"
 category: design-ux
 risk: safe
-tags: [ui, ux, web-design, dribbble, webflow, mockplus, figma, design-system, tailwind, gsap, accessibility, anti-vibe-coding]
+tags: [ui, ux, web-design, dribbble, webflow, mockplus, figma, bootstrap, design-system, tailwind, gsap, accessibility, anti-vibe-coding]
 tools: [antigravity, claude, codex, cursor, copilot, windsurf]
 license: "MIT"
 ---
 
-# Design UX Ultra Skill &bull; 1,000+ Templates Engine
+# Design UX Ultra Skill &bull; 1,425+ Templates Engine
 
-The definitive UI/UX design intelligence skill for AI coding agents. When prompted to create, redesign, or polish a website or application interface, this skill commands the agent to eliminate generic, "vibe-coded" amateur mockups and code like an elite Principal Design Engineer: marrying **Dribbble's** visual flair and micro-delights, **Webflow's** kinetic scrollytelling and fluid responsiveness, **Mockplus's** user-journey heuristics and information architecture, and **Figma Community's** 1,000+ component and token-driven architecture.
+The definitive UI/UX design intelligence skill for AI coding agents. When prompted to create, redesign, or polish a website or application interface, this skill commands the agent to eliminate generic, "vibe-coded" amateur mockups and code like an elite Principal Design Engineer: marrying **Dribbble's** visual flair and micro-delights, **Webflow's** kinetic scrollytelling and fluid responsiveness, **Mockplus's** user-journey heuristics and information architecture, **Bootstrap 5's** rock-solid 12-column responsive flex layouts, and **Figma Community's** 1,425+ component and token-driven architecture.
 
 ---
 
@@ -21,40 +21,42 @@ The definitive UI/UX design intelligence skill for AI coding agents. When prompt
 Activate this skill immediately whenever the user asks to:
 - **Build a new website or landing page** from scratch (SaaS, FinTech, e-commerce, developer tools, portfolio, agency, healthcare, edtech).
 - **Completely redesign an existing website**: Transform it from an amateur or outdated state into a bespoke, authentic production product tailored specifically to the user's domain and needs (Zero "vibe-coded" feel).
-- **Access and compose from 1,000+ Figma Community templates** across 13 major categories (`templates/registry/templates-catalog.json`).
+- **Access and compose from 1,425+ Figma Community & Bootstrap 5 templates** across 15 major categories (`templates/registry/templates-catalog.json`).
 - **Implement animations, micro-interactions, or kinetic scroll effects** (Webflow/GSAP style).
-- **Establish or audit a design system**, design tokens, typography scale, or color palette (Figma-level tokenization).
+- **Establish or audit a design system**, design tokens, typography scale, or color palette (Figma-level tokenization or Bootstrap `--bs-*` hybrid bridges).
 - **Improve UI/UX, usability, navigation, or visual hierarchy** using proven UX heuristics (Mockplus/Nielsen Norman).
 
 ---
 
-## The 4 Pillars of Design UX Ultra
+## The 5 Pillars of Design UX Ultra
 
 ```
                    ┌────────────────────────────────────────┐
                    │        DESIGN UX ULTRA ENGINE          │
                    └──────────────────┬─────────────────────┘
                                       │
-     ┌──────────────────┬─────────────┴──────────────┬──────────────────┐
-     ▼                  ▼                            ▼                  ▼
-┌──────────────┐ ┌───────────────┐          ┌────────────────┐ ┌────────────────┐
-│   DRIBBLE    │ │    WEBFLOW    │          │    MOCKPLUS    │ │ FIGMA COMM.    │
-│ Visual Flair │ │ Kinetic UX    │          │ UX Heuristics  │ │ Design Tokens  │
-├──────────────┤ ├───────────────┤          ├────────────────┤ ├────────────────┤
-│• Aurora Glow │ │• GSAP Scroll  │          │• Fitts's Law   │ │• Token Tiers   │
-│• Bento Grids │ │• Scrollytell  │          │• Hick's Law    │ │• Auto Layout   │
-│• Glassmorphic│ │• Magnetic CTA │          │• Jakob's Flow  │ │• Variant States│
-│• Micro-Tilt  │ │• Clamp Fonts  │          │• WCAG AA/AAA   │ │• Container Qs  │
-└──────────────┘ └───────────────┘          └────────────────┘ └────────────────┘
+     ┌──────────────────┬─────────────┼──────────────┬──────────────────┐
+     ▼                  ▼             ▼              ▼                  ▼
+┌──────────────┐ ┌───────────────┐ ┌────────────┐ ┌────────────────┐ ┌────────────────┐
+│   DRIBBBLE   │ │    WEBFLOW    │ │ BOOTSTRAP  │ │    MOCKPLUS    │ │ FIGMA COMM.    │
+│ Visual Flair │ │ Kinetic UX    │ │ Grid/Layout│ │ UX Heuristics  │ │ Design Tokens  │
+├──────────────┤ ├───────────────┤ ├────────────┤ ├────────────────┤ ├────────────────┤
+│• Aurora Glow │ │• GSAP Scroll  │ │• 12-Col    │ │• Fitts's Law   │ │• Token Tiers   │
+│• Bento Grids │ │• Scrollytell  │ │• Offcanvas │ │• Hick's Law    │ │• Auto Layout   │
+│• Glassmorphic│ │• Magnetic CTA │ │• Float-Lbl │ │• Jakob's Flow  │ │• Variant States│
+│• Micro-Tilt  │ │• Clamp Fonts  │ │• Responsive│ │• WCAG AA/AAA   │ │• Container Qs  │
+└──────────────┘ └───────────────┘ └────────────┘ └────────────────┘ └────────────────┘
 ```
 
 1. **Dribbble Visual Engine (`references/dribbble-visual-engine.md`)**:
    - High visual density with breathing room, Bento grid asymmetry, glowing borders, frosted glass (`backdrop-filter: blur(16px)`), depth elevation, and bespoke typography contrast.
 2. **Webflow Interaction Matrix (`references/webflow-interaction-matrix.md`)**:
    - Scroll-driven choreography, sticky reveals, spring physics, cursor-following magnetic buttons, fluid typography (`clamp()`), and stagger animations.
-3. **Mockplus UX Heuristics (`references/mockplus-ux-heuristics.md`)**:
+3. **Bootstrap Grid & Layouts (`references/bootstrap-grid-components.md`)**:
+   - 12-column responsive flexbox containers, `--bs-*` custom CSS property bridges into Figma token architecture, modern offcanvas navigation drawers, and floating-label forms.
+4. **Mockplus UX Heuristics (`references/mockplus-ux-heuristics.md`)**:
    - User journey mapping, zero-ambiguity hierarchy, reduced cognitive load (chunking 5-7 items), instant feedback loops, empty states, and WCAG AA/AAA color contrast.
-4. **Figma Token Architecture (`references/figma-token-architecture.md`)**:
+5. **Figma Token Architecture (`references/figma-token-architecture.md`)**:
    - 3-tier token hierarchy (`primitive` -> `semantic` -> `component`), variant state matrices (`default`, `hover`, `active`, `focus-visible`, `disabled`, `loading`), and strict 8pt spatial grid alignment.
 
 ---
@@ -78,7 +80,7 @@ Never hardcode arbitrary hex colors or pixel spacings. Always define or adhere t
 
 ### Step 3: Scaffold Information Architecture & Wireframe
 Structure the page for natural reading eye-flow (Z-pattern for landing pages, F-pattern for content-heavy dashboards):
-1. **Sticky Floating Island Navigation** (Brand logo + anchored links + prominent CTA).
+1. **Sticky Floating Island Navigation or Bootstrap Offcanvas Drawer** (Brand logo + anchored links + prominent CTA).
 2. **High-Impact Hero Section** (Category eyebrow badge + H1 value proposition with highlighted gradient text + supporting paragraph + dual CTAs + social proof badges).
 3. **Interactive Hero Visual / Bento Preview** (Glassmorphic card, live UI demonstration, or interactive preview).
 4. **Logo Cloud / Social Proof** (Monochrome logos with subtle hover opacity transition).
@@ -111,12 +113,12 @@ Run an automated mental audit before delivering code:
 
 Explore ready-to-use production templates in `templates/`:
 - **Heroes**: `templates/heroes/bento-aurora-hero.html`, `templates/heroes/spatial-saas-hero.html`, `templates/heroes/kinetic-minimal-hero.html`
-- **Navigation**: `templates/navigation/floating-island-navbar.html`, `templates/navigation/dynamic-mega-menu.html`
+- **Navigation**: `templates/navigation/floating-island-navbar.html`, `templates/navigation/dynamic-mega-menu.html`, `templates/navigation/bootstrap-offcanvas-navbar.html`
 - **Features**: `templates/features/interactive-bento-grid.html`, `templates/features/scrollytelling-showcase.html`
 - **Dashboards**: `templates/dashboards/analytics-bento-dashboard.html`
-- **Components**: `templates/components/interactive-buttons.html`, `templates/components/card-variants.html`, `templates/components/feedback-states.html`, `templates/components/form-wizard-flows.html`
+- **Components**: `templates/components/interactive-buttons.html`, `templates/components/card-variants.html`, `templates/components/feedback-states.html`, `templates/components/form-wizard-flows.html`, `templates/components/floating-label-forms.html`, `templates/components/bootstrap-hybrid-components.html`
 - **Full Landing Pages**: `templates/landing-pages/ultra-saas-landing.html`, `templates/landing-pages/ultra-portfolio-landing.html`
-- **Design Tokens**: `templates/design-tokens/tokens.json`, `templates/design-tokens/tailwind.config.preset.js`
+- **Design Tokens**: `templates/design-tokens/tokens.json`, `templates/design-tokens/tailwind.config.preset.js`, `templates/design-tokens/theme.css`
 
 ---
 
@@ -124,11 +126,16 @@ Explore ready-to-use production templates in `templates/`:
 
 Use the built-in CLI for rapid agent workflow execution:
 ```bash
+# Search across 1,425 templates
+node bin/design-ux-ultra.js search "fintech"
+node bin/design-ux-ultra.js search "bootstrap"
+
 # List all available archetypes and templates
 node bin/design-ux-ultra.js list
 
-# Scaffold a complete SaaS landing page into your project
-node bin/design-ux-ultra.js scaffold saas-landing --framework html
+# Scaffold a template into your project
+node bin/design-ux-ultra.js scaffold saas-landing src/index.html
+node bin/design-ux-ultra.js scaffold bootstrap-offcanvas src/Navbar.html
 
 # Audit an existing HTML or component file for UX and contrast issues
 node bin/design-ux-ultra.js audit src/index.html
@@ -142,6 +149,8 @@ node bin/design-ux-ultra.js export-tokens --format tailwind
 ## Detailed Reference Documentation
 
 For in-depth mastery, load these specialized guides on demand:
+- **`references/1000-templates-directory.md`**: 1,425 Figma Community & Bootstrap 5 templates catalog and Anti-Vibe-Coding framework.
+- **`references/bootstrap-grid-components.md`**: Bootstrap 5 12-column responsive flex grid, `--bs-*` token bridges, offcanvas drawers, and floating labels.
 - **`references/dribbble-visual-engine.md`**: Color grading, aurora glows, bento architecture, glassmorphism specs.
 - **`references/webflow-interaction-matrix.md`**: GSAP ScrollTrigger recipes, magnetic button physics, fluid typography.
 - **`references/mockplus-ux-heuristics.md`**: Information architecture, 10 Nielsen heuristics, onboarding user flows.

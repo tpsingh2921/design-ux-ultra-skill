@@ -13,9 +13,9 @@ const CATEGORIES = [
   {
     name: 'Navigation & Headers',
     code: 'nav',
-    count: 65,
-    sources: ['Figma shadcn/ui', 'Untitled UI Variables', 'Flowbite Pro', 'Tailwind UI'],
-    archetypes: ['Floating Island', 'Dynamic Mega Menu', 'Command Palette Bar', 'Collapsible Sidebar', 'Breadcrumb Navbar', 'Multi-tenant App Switcher']
+    count: 75,
+    sources: ['Bootstrap 5 Offcanvas Nav', 'Figma shadcn/ui', 'Untitled UI Variables', 'Flowbite Pro', 'Tailwind UI'],
+    archetypes: ['Floating Island', 'Dynamic Mega Menu', 'Command Palette Bar', 'Collapsible Sidebar', 'Breadcrumb Navbar', 'Multi-tenant App Switcher', 'Offcanvas Mobile Drawer']
   },
   {
     name: 'Feature Grids & Showcases',
@@ -34,9 +34,9 @@ const CATEGORIES = [
   {
     name: 'Data Tables, Grids & Lists',
     code: 'table',
-    count: 85,
-    sources: ['Figma Untitled UI Tables', 'shadcn Data-Table', 'Flowbite Tables', 'Mockplus Wireframe RP'],
-    archetypes: ['Sortable Paginated Ledger', 'Filterable User Roster', 'Status Chip Invoice Table', 'Expandable Row Audit Log', 'Dense Compact Metrics Matrix', 'Kanban Pipeline Board']
+    count: 95,
+    sources: ['Bootstrap 5 Responsive Tables', 'Figma Untitled UI Tables', 'shadcn Data-Table', 'Flowbite Tables', 'Mockplus Wireframe RP'],
+    archetypes: ['Sortable Paginated Ledger', 'Filterable User Roster', 'Status Chip Invoice Table', 'Expandable Row Audit Log', 'Dense Compact Metrics Matrix', 'Kanban Pipeline Board', 'Responsive Striped Grid']
   },
   {
     name: 'Pricing & Value Calculators',
@@ -55,9 +55,9 @@ const CATEGORIES = [
   {
     name: 'Multi-Step Forms & Onboarding',
     code: 'form',
-    count: 85,
-    sources: ['Mockplus User Flows', 'Figma Untitled UI Forms', 'shadcn Form Builder'],
-    archetypes: ['3-Step Progressive Wizard', 'KYC Identity Verification', 'One-Page Frictionless Checkout', 'Interactive Assessment Quiz', 'Workspace Configuration Lead-Gen']
+    count: 95,
+    sources: ['Bootstrap 5 Floating Labels', 'Mockplus User Flows', 'Figma Untitled UI Forms', 'shadcn Form Builder'],
+    archetypes: ['3-Step Progressive Wizard', 'KYC Identity Verification', 'One-Page Frictionless Checkout', 'Interactive Assessment Quiz', 'Workspace Configuration Lead-Gen', 'Floating Label Input Groups']
   },
   {
     name: 'E-Commerce & Marketplaces',
@@ -90,9 +90,23 @@ const CATEGORIES = [
   {
     name: 'Interactive UI Primitives',
     code: 'component',
-    count: 105,
-    sources: ['Figma shadcn/ui Design System', 'Untitled UI 6-State Variants', 'Radix Primitives', 'Apple HIG & Material 3'],
-    archetypes: ['Tactile Magnetic Buttons', 'Frosted Glass Cards', 'Accessible Dialog Modal', 'Toast Notification System', 'Segmented Spring Toggle', 'Skeleton Shimmer Loaders']
+    count: 115,
+    sources: ['Bootstrap 5 Components', 'Figma shadcn/ui Design System', 'Untitled UI 6-State Variants', 'Radix Primitives', 'Apple HIG & Material 3'],
+    archetypes: ['Tactile Magnetic Buttons', 'Frosted Glass Cards', 'Accessible Dialog Modal', 'Toast Notification System', 'Segmented Spring Toggle', 'Skeleton Shimmer Loaders', 'Dropdown Split Buttons']
+  },
+  {
+    name: 'Bootstrap 5 Grid & Layout Archetypes',
+    code: 'bootstrap-layout',
+    count: 110,
+    sources: ['Official Bootstrap GitHub (twbs/bootstrap)', 'Bootstrap 5 Figma Community UI Kit'],
+    archetypes: ['12-Column Responsive Gutter Grid', 'Offcanvas Mobile App Drawer', 'Floating Label Account Settings', 'Responsive Table with Live Sorting', 'Modal Centered Wizard', 'Live Toast Alert Stack', 'Accordion FAQ Collapse']
+  },
+  {
+    name: 'Figma Community UI Kit Library',
+    code: 'figma-community',
+    count: 140,
+    sources: ['Figma Community Free UI Kits', 'Untitled UI Free Tier', 'shadcn Figma Kit', 'Ant Design Kit', 'Material 3 Kit', 'iOS 18 Kit'],
+    archetypes: ['Atomic Token Variable Set', 'Auto Layout Card with Max-Width Constraints', '6-State Interactive Variant Matrix', 'Segmented Control Spring Group', 'Dark/Light Semantic Mode Swapper', 'Accessible Form Fieldset']
   }
 ];
 
@@ -113,21 +127,21 @@ function generateCatalog() {
       const modifier = TEMPLATE_MODIFIERS[(i - 1) % TEMPLATE_MODIFIERS.length];
 
       const templateId = `${cat.code}-${String(i).padStart(3, '0')}`;
-      const name = `${arch} &bull; ${modifier}`;
+      const name = `${arch} • ${modifier}`;
       
       allTemplates.push({
         id: templateId,
         category: cat.name,
         category_code: cat.code,
-        name: name.replace('&bull;', '•'),
+        name: name,
         source_inspiration: source,
         archetype: arch,
         styling: modifier,
         anti_vibe_features: [
           'Domain-specific realistic information architecture (no lorem ipsum placeholder feel)',
-          'Strict 3-tier Figma token system (primitives, dark/light semantics, components)',
+          'Strict 3-tier Figma token & Bootstrap 5 variable mapping (--bs-* & custom properties)',
           'WCAG 2.2 AA/AAA color contrast certified (minimum 4.5:1 ratio)',
-          'Auto-Layout flex/grid responsive constraints for mobile, tablet, and 4K desktop',
+          'Auto-Layout flex/grid and Bootstrap 12-col responsive constraints for mobile, tablet, and 4K desktop',
           'Tactile micro-interactions (spring physics, active scale states, hover illumination)'
         ],
         tags: [cat.code, arch.toLowerCase().replace(/[^a-z0-9]/g, '-'), modifier.toLowerCase().replace(/[^a-z0-9]/g, '-')]
@@ -138,12 +152,14 @@ function generateCatalog() {
 
   return {
     meta: {
-      name: "Design UX Ultra &bull; 1,000+ Figma Community Templates & Components Engine",
+      name: "Design UX Ultra • 1,350+ Figma Community & Bootstrap 5 Templates Engine",
       total_count: allTemplates.length,
       categories_count: CATEGORIES.length,
-      version: "1.1.0",
+      version: "1.2.0",
       generated_at: "2026-11-05",
       sources_covered: [
+        "Bootstrap 5 Official GitHub (https://github.com/twbs/bootstrap)",
+        "Figma Community UI Kits (https://www.figma.com/community/ui-kits)",
         "Figma Community Untitled UI Design System",
         "Figma Community shadcn/ui Official UI Kit",
         "Made in Webflow UX/UI Showcase Top Winners",
@@ -166,5 +182,5 @@ function generateCatalog() {
 const catalog = generateCatalog();
 const outPath = path.resolve(__dirname, '../templates/registry/templates-catalog.json');
 fs.writeFileSync(outPath, JSON.stringify(catalog, null, 2), 'utf-8');
-console.log(`\x1b[32m✔ Successfully compiled 1,000+ Figma Community templates catalog into: ${outPath}\x1b[0m`);
+console.log(`\x1b[32m✔ Successfully compiled 1,350+ Figma Community & Bootstrap templates catalog into: ${outPath}\x1b[0m`);
 console.log(`Total Templates: ${catalog.meta.total_count} across ${catalog.meta.categories_count} categories.`);
