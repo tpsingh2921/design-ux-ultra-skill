@@ -1,0 +1,37 @@
+{
+  "name": "design-ux-ultra-skill",
+  "version": "1.0.0",
+  "description": "World-class UI/UX design engine for coding AI agents. Synthesizes Dribbble visual flair, Made in Webflow kinetic interactions, Mockplus UX heuristics, and Figma Community auto-layout token systems.",
+  "main": "scripts/scaffold-ui.js",
+  "bin": {
+    "design-ux-ultra": "bin/design-ux-ultra.js"
+  },
+  "scripts": {
+    "test": "node bin/design-ux-ultra.js audit templates/landing-pages/ultra-saas-landing.html",
+    "list": "node bin/design-ux-ultra.js list",
+    "audit": "node bin/design-ux-ultra.js audit",
+    "export-tokens": "node bin/design-ux-ultra.js export-tokens",
+    "install-skill": "node bin/design-ux-ultra.js install"
+  },
+  "keywords": [
+    "agentskills",
+    "ai-agent",
+    "ui-ux",
+    "web-design",
+    "dribbble",
+    "webflow",
+    "mockplus",
+    "figma",
+    "antigravity",
+    "claude-code",
+    "cursor",
+    "design-tokens",
+    "tailwind"
+  ],
+  "author": "Tejpal Singh Jodha <tpsingh2101@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tpsingh2101/design-ux-ultra-skill.git"
+  }
+}

@@ -1,0 +1,144 @@
+# Figma Community Design Token & Component Architecture
+
+This document codifies the modern design token taxonomy, component variant matrices, and Auto Layout mental models established by industry-leading Figma Community UI Kits (Untitled UI, shadcn/ui, Flowbite, Apple iOS HIG, and Material 3).
+
+---
+
+## 1. The 3-Tier Design Token Hierarchy
+
+Top Figma UI Kits never map primitive values directly to component styles. They use a strict 3-tier indirection:
+
+```
+┌────────────────────────────────┐
+│   Tier 1: Primitives (Values)  │  e.g., indigo-500: #6366f1, spacing-4: 16px
+└───────────────┬────────────────┘
+                ▼
+┌────────────────────────────────┐
+│   Tier 2: Semantics (Meaning)  │  e.g., color-brand-primary: {indigo-500}
+└───────────────┬────────────────┘       color-surface-card: {slate-900}
+                ▼
+┌────────────────────────────────┐
+│   Tier 3: Components (Context) │  e.g., button-primary-bg: {color-brand-primary}
+└────────────────────────────────┘       card-border-default: {color-border-subtle}
+```
+
+### Why this matters:
+- Changing the primary brand color requires editing exactly **one** token, without touching hundreds of component files.
+- Light/Dark mode is simply a semantic swap (e.g., `--color-surface: #ffffff` in light mode, `#0f172a` in dark mode).
+
+---
+
+## 2. CSS Custom Properties / Semantic Token Definitions
+
+```css
+:root {
+  /* ==========================================================================
+     Tier 1: Primitives
+     ========================================================================== */
+  --primitive-indigo-400: #818cf8;
+  --primitive-indigo-500: #6366f1;
+  --primitive-indigo-600: #4f46e5;
+  --primitive-slate-950: #020617;
+  --primitive-slate-900: #0f172a;
+  --primitive-slate-800: #1e293b;
+  --primitive-slate-700: #334155;
+  --primitive-slate-400: #94a3b8;
+  --primitive-slate-100: #f1f5f9;
+
+  /* ==========================================================================
+     Tier 2: Semantic Tokens (Dark Mode Default)
+     ========================================================================== */
+  --color-bg-canvas: var(--primitive-slate-950);
+  --color-bg-surface: var(--primitive-slate-900);
+  --color-bg-subtle: var(--primitive-slate-800);
+  
+  --color-border-default: rgba(255, 255, 255, 0.08);
+  --color-border-focus: var(--primitive-indigo-500);
+  --color-border-hover: rgba(255, 255, 255, 0.16);
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: var(--primitive-slate-400);
+  --color-text-brand: var(--primitive-indigo-400);
+
+  --color-brand-primary: var(--primitive-indigo-600);
+  --color-brand-hover: var(--primitive-indigo-500);
+
+  /* Spacing Scale (8pt Grid) */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem;    /* 16px */
+  --space-6: 1.5rem;  /* 24px */
+  --space-8: 2rem;    /* 32px */
+  --space-12: 3rem;   /* 48px */
+  --space-16: 4rem;   /* 64px */
+
+  /* Radii Scale */
+  --radius-sm: 0.375rem; /* 6px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-2xl: 1.5rem;  /* 24px */
+  --radius-full: 9999px;
+
+  /* Elevation Shadows */
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 25px -3px rgba(99, 102, 241, 0.35);
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] {
+  --color-bg-canvas: #f8fafc;
+  --color-bg-surface: #ffffff;
+  --color-bg-subtle: #f1f5f9;
+  --color-border-default: #e2e8f0;
+  --color-border-hover: #cbd5e1;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #64748b;
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.06);
+}
+```
+
+---
+
+## 3. Auto Layout Mental Model in Code
+
+In Figma, everything is Auto Layout (Flexbox / Grid). Top UI kits strictly follow these 4 Auto Layout constraints:
+
+1. **Hugging vs. Filling**:
+   - Buttons and Badges: `w-auto self-start inline-flex items-center` (Hug Contents).
+   - Card content and text headings: `w-full flex-1` (Fill Container).
+   - Modals and Drawers: `max-w-lg w-full mx-auto` (Constrained Fill).
+
+2. **Container Queries (`@container`)**:
+   Instead of relying solely on window breakpoints, components adapt to their immediate parent container width:
+
+```html
+<div class="@container">
+  <div class="flex flex-col @sm:flex-row @sm:items-center justify-between gap-4 p-6 bg-slate-900 border border-slate-800 rounded-2xl">
+    <div>
+      <h4 class="text-base font-semibold text-white">Edge Caching Cluster</h4>
+      <p class="text-xs text-slate-400">Singapore (ap-southeast-1)</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+      <span class="text-xs font-mono text-emerald-400">Active (0.4ms)</span>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## 4. Component Variant Matrix Checklist
+
+Every reusable component generated by an AI coding agent must declare styles for the full 6-state variant matrix:
+
+| State | Visual Indicator | Example Code |
+|---|---|---|
+| **Default** | Balanced elevation, standard border | `border-white/10 bg-white/5` |
+| **Hover** | Lifted transform, intensified border/glow | `hover:-translate-y-0.5 hover:border-white/20` |
+| **Active / Pressed** | Slight scale reduction, depressed shadow | `active:scale-[0.98] active:translate-y-0` |
+| **Focus-Visible** | High-contrast outline ring with offset | `focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2` |
+| **Disabled** | 50% opacity, cursor not-allowed, no hover | `disabled:opacity-50 disabled:pointer-events-none` |
+| **Loading** | Inline SVG spinner, locked dimensions | `aria-busy="true" pointer-events-none` |

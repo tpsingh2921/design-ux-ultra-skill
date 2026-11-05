@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyperplane &bull; Autonomous Cloud & UX Infrastructure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .aurora-bg {
+      background-color: #030712;
+      background-image: 
+        radial-gradient(at 15% 15%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+        radial-gradient(at 85% 20%, rgba(236, 72, 153, 0.12) 0px, transparent 45%),
+        radial-gradient(at 50% 80%, rgba(34, 211, 238, 0.14) 0px, transparent 55%);
+      background-attachment: fixed;
+    }
+    .glass-panel {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body class="aurora-bg text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- 1. FLOATING ISLAND NAVIGATION -->
+  <nav class="fixed top-6 inset-x-0 z-50 max-w-5xl mx-auto px-4 pointer-events-none">
+    <div class="pointer-events-auto bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-full px-5 py-2.5 shadow-2xl shadow-black/50 flex items-center justify-between transition-all">
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-400 p-0.5 flex items-center justify-center">
+          <div class="w-full h-full bg-slate-950 rounded-lg flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+        </div>
+        <span class="font-bold text-sm tracking-tight text-white">Hyperplane</span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-1 bg-slate-950/40 p-1 rounded-full border border-slate-800/60">
+        <a href="#features" class="px-4 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Features</a>
+        <a href="#architecture" class="px-4 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Architecture</a>
+        <a href="#pricing" class="px-4 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">Pricing</a>
+        <a href="#faq" class="px-4 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all">FAQ</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#pricing" class="px-4 py-2 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs shadow-md shadow-indigo-600/30 hover:scale-105 active:scale-95 transition-all">
+          Deploy Cluster
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. HIGH-IMPACT HERO -->
+  <header class="relative pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-slate-900/80 border border-slate-700 shadow-md mb-8 backdrop-blur-md">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="text-slate-300">Hyperplane Engine v2.4 Global Release</span>
+      <span class="text-indigo-400 font-mono">&rarr;</span>
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-6 max-w-5xl mx-auto">
+      Distributed Edge Computing With 
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-300 to-pink-400">
+        Zero Latency Overhead
+      </span>
+    </h1>
+
+    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Deploy stateful applications across 320 global edge points in seconds with automated failover, live telemetry, and instant canary rollouts.
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <a href="#pricing" class="px-8 py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-xl shadow-indigo-600/30 hover:-translate-y-0.5 active:scale-95 transition-all">
+        Start Free Trial &bull; No Credit Card
+      </a>
+      <a href="#architecture" class="px-7 py-3.5 rounded-2xl glass-panel hover:bg-white/10 text-slate-200 font-semibold text-sm transition-all flex items-center gap-2">
+        <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>Watch 2-Min Demo</span>
+      </a>
+    </div>
+
+    <!-- Live Telemetry Card Preview -->
+    <div class="mt-16 max-w-4xl mx-auto rounded-3xl border border-slate-800 bg-slate-900/90 shadow-2xl p-4 sm:p-6 backdrop-blur-xl text-left">
+      <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800 text-xs text-slate-400">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+          <span class="font-mono text-white">cluster-01.ord.hyperplane.dev</span>
+        </div>
+        <span class="font-mono text-emerald-400">HEALTH: 100% OPTIMAL</span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+          <div class="text-xs font-mono text-slate-500 uppercase">Throughput</div>
+          <div class="text-2xl font-bold text-white mt-1">2.4M req/s</div>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+          <div class="text-xs font-mono text-slate-500 uppercase">Edge P99</div>
+          <div class="text-2xl font-bold text-cyan-400 mt-1">4.2ms</div>
+        </div>
+        <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+          <div class="text-xs font-mono text-slate-500 uppercase">Global Ingress</div>
+          <div class="text-2xl font-bold text-indigo-400 mt-1">320 PoPs</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. LOGO CLOUD (CREDIBILITY PROOF) -->
+  <section class="py-12 border-y border-slate-850/60 max-w-7xl mx-auto px-4 text-center">
+    <p class="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-8">Trusted by infrastructure leaders globally</p>
+    <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-16 opacity-60">
+      <span class="font-bold tracking-tighter text-xl text-slate-300">ACME CORP</span>
+      <span class="font-bold tracking-tighter text-xl text-slate-300">VERTEX LABS</span>
+      <span class="font-bold tracking-tighter text-xl text-slate-300">NEXUS AI</span>
+      <span class="font-bold tracking-tighter text-xl text-slate-300">PULSE CLOUD</span>
+      <span class="font-bold tracking-tighter text-xl text-slate-300">ORBIT DATA</span>
+    </div>
+  </section>
+
+  <!-- 4. ASYMMETRICAL BENTO FEATURES -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="features">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-4">
+        Core Capabilities
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Everything You Need to Scale Confidently</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 glass-panel rounded-3xl p-8 flex flex-col justify-between">
+        <div>
+          <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-500/20 text-indigo-300">INTELLIGENT ROUTING</span>
+          <h3 class="text-2xl font-bold text-white mt-4">Geo-Proximity Packet Acceleration</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            Our autonomous DNS mesh analyzes real-time BGP routing changes, instantly routing traffic to the nearest healthy edge node.
+          </p>
+        </div>
+        <div class="mt-8 bg-slate-950 p-4 rounded-2xl border border-slate-800 font-mono text-xs text-slate-400">
+          &gt; Routing latency: 1.8ms (Tokyo &rarr; Singapore bypass)
+        </div>
+      </div>
+
+      <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between">
+        <div>
+          <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/20 text-cyan-300">ZERO DOWNTIME</span>
+          <h3 class="text-xl font-bold text-white mt-4">Automated Canaries</h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            Gradually shift 1% to 100% of live traffic with instant automated rollback if error rates exceed 0.01%.
+          </p>
+        </div>
+        <div class="text-3xl font-extrabold text-cyan-400 mt-6">99.999% SLA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PRICING TABLE WITH TOGGLE -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto" id="pricing">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Simple, Predictable Infrastructure Pricing</h2>
+      <p class="text-slate-400 text-sm sm:text-base mt-2">Zero hidden transfer egress fees.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Starter Card -->
+      <div class="glass-panel rounded-3xl p-8 flex flex-col justify-between">
+        <div>
+          <h3 class="text-lg font-bold text-white">Developer Tier</h3>
+          <p class="text-slate-400 text-xs mt-1">For side-projects and prototype clusters.</p>
+          <div class="text-4xl font-extrabold text-white my-6">$29<span class="text-sm font-normal text-slate-400">/mo</span></div>
+          <ul class="space-y-3 text-xs text-slate-300">
+            <li class="flex items-center gap-2">&check; Up to 5 distributed clusters</li>
+            <li class="flex items-center gap-2">&check; 5TB included edge bandwidth</li>
+            <li class="flex items-center gap-2">&check; Community Slack support</li>
+          </ul>
+        </div>
+        <button class="w-full mt-8 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition-colors">
+          Start Developer Tier
+        </button>
+      </div>
+
+      <!-- Pro / Featured Card -->
+      <div class="relative rounded-3xl p-[1px] bg-gradient-to-b from-indigo-500 via-cyan-400 to-indigo-600 shadow-2xl shadow-indigo-500/20">
+        <div class="bg-slate-950 rounded-2xl p-8 h-full flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <h3 class="text-lg font-bold text-white">Enterprise Mesh</h3>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-indigo-500 text-white">MOST POPULAR</span>
+            </div>
+            <p class="text-slate-400 text-xs mt-1">For mission-critical production platforms.</p>
+            <div class="text-4xl font-extrabold text-white my-6">$199<span class="text-sm font-normal text-slate-400">/mo</span></div>
+            <ul class="space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2 text-indigo-300">&check; Unlimited global clusters</li>
+              <li class="flex items-center gap-2 text-indigo-300">&check; 50TB included bandwidth</li>
+              <li class="flex items-center gap-2 text-indigo-300">&check; 15-minute dedicated SLA</li>
+              <li class="flex items-center gap-2 text-indigo-300">&check; Custom SOC2 compliance exports</li>
+            </ul>
+          </div>
+          <button class="w-full mt-8 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-lg shadow-indigo-600/30 transition-all">
+            Deploy Enterprise Mesh
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ACCORDION FAQ -->
+  <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto" id="faq">
+    <div class="text-center mb-12">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Frequently Asked Questions</h2>
+    </div>
+    <div class="space-y-4">
+      <div class="glass-panel rounded-2xl p-6">
+        <h4 class="text-sm font-bold text-white mb-2">How do canary deployments prevent outages?</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Canaries test fresh code on 1% of live requests. If error metrics or latency spike by more than 0.1%, traffic is automatically shifted back in under 50ms without human intervention.
+        </p>
+      </div>
+      <div class="glass-panel rounded-2xl p-6">
+        <h4 class="text-sm font-bold text-white mb-2">Can I connect my existing AWS or GCP infrastructure?</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Yes. Hyperplane sits as a distributed edge caching and routing layer in front of your existing VPCs via WireGuard or PrivateLink.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONVERSION CALL TO ACTION BANNER -->
+  <section class="py-20 px-4 max-w-5xl mx-auto text-center">
+    <div class="rounded-3xl bg-gradient-to-r from-indigo-950 via-slate-900 to-indigo-950 border border-indigo-800/40 p-12 shadow-2xl relative overflow-hidden">
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Ready to Accelerate Your Architecture?</h2>
+      <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto mb-8">
+        Join over 12,000 developers building with zero latency compromise.
+      </p>
+      <a href="#pricing" class="px-8 py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-xl shadow-indigo-600/30 transition-all inline-block">
+        Deploy Your Cluster Now
+      </a>
+    </div>
+  </section>
+
+  <!-- 8. MULTI-COLUMN FOOTER -->
+  <footer class="border-t border-slate-800/80 py-12 px-4 max-w-7xl mx-auto text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div>&copy; 2026 Hyperplane Infrastructure, Inc. All rights reserved.</div>
+    <div class="flex items-center gap-6">
+      <a href="#" class="hover:text-slate-300">Security</a>
+      <a href="#" class="hover:text-slate-300">Privacy</a>
+      <a href="#" class="hover:text-slate-300">Status</a>
+    </div>
+  </footer>
+
+</body>
+</html>

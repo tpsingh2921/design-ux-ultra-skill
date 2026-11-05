@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Bento Dashboard - Design UX Ultra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-[#030712] text-slate-100 min-h-screen antialiased">
+
+  <div class="flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 border-r border-slate-800 bg-slate-950/80 p-6 flex flex-col justify-between hidden md:flex">
+      <div>
+        <!-- Logo -->
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-600/30">
+            U
+          </div>
+          <span class="font-bold text-base text-white tracking-tight">UltraControl</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="space-y-1">
+          <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-xl bg-indigo-600/10 text-indigo-400 font-semibold text-xs border border-indigo-500/20">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+            <span>Overview</span>
+          </a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900 font-medium text-xs transition-colors">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span>Telemetry</span>
+          </a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900 font-medium text-xs transition-colors">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <span>Customers</span>
+          </a>
+          <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-900 font-medium text-xs transition-colors">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Settings</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- User Card -->
+      <div class="flex items-center gap-3 p-3 rounded-2xl bg-slate-900 border border-slate-800">
+        <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-xs text-white">
+          TP
+        </div>
+        <div class="overflow-hidden">
+          <div class="text-xs font-semibold text-white truncate">Tejpal Singh</div>
+          <div class="text-[11px] text-slate-500 font-mono">Enterprise Admin</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 overflow-y-auto p-6 lg:p-10">
+      
+      <!-- Top Bar -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+        <div>
+          <h1 class="text-2xl lg:text-3xl font-bold text-white tracking-tight">Executive Telemetry</h1>
+          <p class="text-slate-400 text-xs mt-1">Real-time edge metrics synchronized across 32 regional clusters.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button class="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-xs font-medium hover:text-white transition-colors">
+            Last 30 Days &darr;
+          </button>
+          <button class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-lg shadow-indigo-600/30 transition-all">
+            Export Report
+          </button>
+        </div>
+      </div>
+
+      <!-- Bento KPI Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <div class="text-xs text-slate-400 font-medium">Monthly Active Sessions</div>
+          <div class="text-2xl font-bold text-white mt-2">1,842,900</div>
+          <div class="text-xs text-emerald-400 mt-1 font-mono">&uarr; 18.2% vs last month</div>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <div class="text-xs text-slate-400 font-medium">Average Request Latency</div>
+          <div class="text-2xl font-bold text-cyan-400 mt-2">14.2ms</div>
+          <div class="text-xs text-emerald-400 mt-1 font-mono">&darr; 4.1ms speedup</div>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <div class="text-xs text-slate-400 font-medium">Core Web Vitals Pass Rate</div>
+          <div class="text-2xl font-bold text-emerald-400 mt-2">99.4%</div>
+          <div class="text-xs text-slate-400 mt-1 font-mono">100/100 Lighthouse</div>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+          <div class="text-xs text-slate-400 font-medium">Conversion Lift</div>
+          <div class="text-2xl font-bold text-pink-400 mt-2">+31.8%</div>
+          <div class="text-xs text-slate-400 mt-1 font-mono">Statistical confidence 99%</div>
+        </div>
+      </div>
+
+      <!-- Main Visual Analytics Card (Bento 2-col) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Chart Simulation Container -->
+        <div class="lg:col-span-2 bg-slate-900/70 border border-slate-800 rounded-3xl p-6">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <h3 class="text-base font-bold text-white">Throughput & Interaction Traffic</h3>
+              <p class="text-xs text-slate-400 mt-0.5">Sub-second event stream</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-2 h-2 rounded-full bg-indigo-500"></span>
+              <span class="text-xs text-slate-400">P95 Render Speed</span>
+            </div>
+          </div>
+          <!-- Bar Graph Visualization -->
+          <div class="h-64 flex items-end gap-2 pt-8">
+            <div class="flex-1 bg-indigo-600/30 hover:bg-indigo-500 rounded-t-lg h-[40%] transition-all"></div>
+            <div class="flex-1 bg-indigo-600/30 hover:bg-indigo-500 rounded-t-lg h-[65%] transition-all"></div>
+            <div class="flex-1 bg-indigo-600/30 hover:bg-indigo-500 rounded-t-lg h-[50%] transition-all"></div>
+            <div class="flex-1 bg-indigo-600/30 hover:bg-indigo-500 rounded-t-lg h-[80%] transition-all"></div>
+            <div class="flex-1 bg-indigo-600/30 hover:bg-indigo-500 rounded-t-lg h-[95%] transition-all"></div>
+            <div class="flex-1 bg-indigo-600/30 hover:bg-indigo-500 rounded-t-lg h-[70%] transition-all"></div>
+            <div class="flex-1 bg-indigo-600 hover:bg-indigo-400 rounded-t-lg h-[88%] transition-all shadow-lg shadow-indigo-500/20"></div>
+          </div>
+        </div>
+
+        <!-- Recent Edge Events Card -->
+        <div class="bg-slate-900/70 border border-slate-800 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-base font-bold text-white mb-4">Cluster Health</h3>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+                <div>
+                  <div class="text-xs font-semibold text-white">us-east-va (US East)</div>
+                  <div class="text-[11px] text-slate-500 font-mono">42ms latency</div>
+                </div>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Optimal</span>
+              </div>
+              <div class="flex items-center justify-between p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+                <div>
+                  <div class="text-xs font-semibold text-white">eu-central-ff (Frankfurt)</div>
+                  <div class="text-[11px] text-slate-500 font-mono">18ms latency</div>
+                </div>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Optimal</span>
+              </div>
+              <div class="flex items-center justify-between p-3 rounded-xl bg-slate-950 border border-slate-800/80">
+                <div>
+                  <div class="text-xs font-semibold text-white">ap-southeast-sg (Singapore)</div>
+                  <div class="text-[11px] text-slate-500 font-mono">22ms latency</div>
+                </div>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Optimal</span>
+              </div>
+            </div>
+          </div>
+          <button class="w-full mt-6 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-colors">
+            Audit All 32 Regions
+          </button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
