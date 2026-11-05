@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Agent%20Skills-Standard%20Compliant-6366f1?style=for-the-badge&logo=anthropic&logoColor=white" alt="Agent Skills Standard" />
-  <img src="https://img.shields.io/badge/Version-1.0.0-06b6d4?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/Version-1.2.0-06b6d4?style=for-the-badge" alt="Version" />
   <img src="https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge" alt="MIT License" />
   <img src="https://img.shields.io/badge/Compatibility-Antigravity%20|%20Claude%20|%20Cursor%20|%20Codex%20|%20Windsurf-ec4899?style=for-the-badge" alt="Compatibility" />
 </p>
