@@ -73,8 +73,8 @@ function installSkill(target = 'antigravity') {
     }
   });
 
-  // Copy references, rules, and templates directories
-  ['references', 'rules', 'templates', 'scripts'].forEach(folder => {
+  // Copy assets, docs, references, rules, and templates directories
+  ['assets', 'docs', 'references', 'rules', 'templates', 'scripts'].forEach(folder => {
     const srcFolder = path.join(repoDir, folder);
     const dstFolder = path.join(targetSkillDir, folder);
     if (fs.existsSync(srcFolder)) {

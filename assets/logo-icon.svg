@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <title>Design UX Ultra Brand Mark</title>
+  <defs>
+    <!-- Background Depth -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Kinetic Ultra Gradient -->
+    <linearGradient id="ultraGrad" x1="64" y1="52" x2="192" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <!-- Core Star Accent -->
+    <linearGradient id="starGrad" x1="112" y1="92" x2="144" y2="132" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Squircle Container -->
+  <rect x="16" y="16" width="224" height="224" rx="56" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="224" height="224" rx="56" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Left Stem of "U" -->
+  <path d="M64 68C64 59 71 52 80 52H96C105 52 112 59 112 68V144C112 153 105 160 96 160H80C71 160 64 153 64 144V68Z" fill="url(#ultraGrad)"/>
+
+  <!-- Right Stem of "U" -->
+  <path d="M144 68C144 59 151 52 160 52H176C185 52 192 59 192 68V144C192 153 185 160 176 160H160C151 160 144 153 144 144V68Z" fill="url(#ultraGrad)"/>
+
+  <!-- Kinetic Bottom Loop of "U" -->
+  <path d="M64 136C64 171 93 200 128 200C163 200 192 171 192 136H160C160 154 146 168 128 168C110 168 96 154 96 136H64Z" fill="url(#ultraGrad)"/>
+
+  <!-- Central Intelligence Core (4-Point Diamond Spark) -->
+  <path d="M128 92C128 103 137 112 148 112C137 112 128 121 128 132C128 121 119 112 108 112C119 112 128 103 128 92Z" fill="url(#starGrad)"/>
+</svg>

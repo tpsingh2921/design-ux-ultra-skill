@@ -1,4 +1,6 @@
-# Design UX Ultra Skill &bull; `design-ux-ultra-skill`
+<p align="center">
+  <img src="assets/logo.svg" alt="Design UX Ultra Skill Logo" width="680" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Agent%20Skills-Standard%20Compliant-6366f1?style=for-the-badge&logo=anthropic&logoColor=white" alt="Agent Skills Standard" />
@@ -15,25 +17,15 @@
 
 Base coding AI agents often generate flat, generic, outdated ("slop") frontend mockups with boring gray containers, awkward paddings, and lifeless interactions.
 
-**Design UX Ultra Skill** permanently solves this. By installing this skill into your AI coding agent (Antigravity, Claude Code, Cursor, Codex, GitHub Copilot, Windsurf), you equip the agent with a four-pillar design intelligence engine:
+**Design UX Ultra Skill** permanently solves this. By installing this skill into your AI coding agent (Antigravity, Claude Code, Cursor, Codex, GitHub Copilot, Windsurf), you equip the agent with an autonomous four-pillar design intelligence engine:
 
-```
-                      ┌────────────────────────────────────────┐
-                      │        DESIGN UX ULTRA ENGINE          │
-                      └──────────────────┬─────────────────────┘
-                                         │
-        ┌──────────────────┬─────────────┴──────────────┬──────────────────┐
-        ▼                  ▼                            ▼                  ▼
-┌──────────────┐ ┌───────────────┐          ┌────────────────┐ ┌────────────────┐
-│   DRIBBBLE   │ │    WEBFLOW    │          │    MOCKPLUS    │ │ FIGMA COMM.    │
-│ Visual Flair │ │  Kinetic UX   │          │ UX Heuristics  │ │ Design Tokens  │
-├──────────────┤ ├───────────────┤          ├────────────────┤ ├────────────────┤
-│• Aurora Glow │ │• GSAP Scroll  │          │• Fitts's Law   │ │• Token Tiers   │
-│• Bento Grids │ │• Scrollytell  │          │• Hick's Law    │ │• Auto Layout   │
-│• Glassmorphic│ │• Magnetic CTA │          │• Jakob's Flow  │ │• Variant States│
-│• 3D Tilt     │ │• Clamp Fonts  │          │• WCAG AA/AAA   │ │• Container Qs  │
-└──────────────┘ └───────────────┘          └────────────────┘ └────────────────┘
-```
+<p align="center">
+  <a href="assets/engine-diagram.html">
+    <img src="assets/engine-diagram.svg" alt="Design UX Ultra Engine Architecture Diagram" width="100%" />
+  </a>
+  <br>
+  <em>Figure 1: Full multi-tier cognitive architecture of the Design UX Ultra Engine. Click image to open the <a href="assets/engine-diagram.html">interactive schematic</a>.</em>
+</p>
 
 ---
 

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design UX Ultra Engine Architecture</title>
+  <style>
+    :root {
+      --bg: #030712;
+      --card-bg: #0b0f19;
+      --border: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --indigo: #6366f1;
+      --cyan: #06b6d4;
+      --emerald: #10b981;
+      --pink: #ec4899;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Plus Jakarta Sans", sans-serif;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+    .header p {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .svg-wrapper {
+      width: 100%;
+      background: #090d16;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Design UX Ultra Engine &bull; System Architecture</h1>
+      <p>Universal multi-agent orchestration connecting Dribbble, Webflow, Mockplus, and Figma to production code.</p>
+    </div>
+    <div class="svg-wrapper">
+      <svg role="img" aria-labelledby="diagTitle diagDesc" viewBox="0 0 1000 680" fill="none">
+        <title id="diagTitle">Design UX Ultra Engine Architecture Diagram</title>
+        <desc id="diagDesc">Four-tier architecture connecting AI agents through the Design UX Ultra Core Orchestrator to the 4 foundational design pillars and production deliverables.</desc>
+        
+        <!-- Reuse existing SVG content -->
+        <rect width="1000" height="680" fill="#090D16"/>
+
+        <!-- Ingress Tier -->
+        <g transform="translate(40, 28)">
+          <text x="0" y="16" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="0.1em">01 / INGRESS TIER &bull; MULTI-AGENT INVOCATION</text>
+          <g transform="translate(0, 28)">
+            <rect x="0" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+            <circle cx="20" cy="21" r="5" fill="#818CF8"/>
+            <text x="34" y="25" fill="#F1F5F9" font-weight="700" font-size="12">Antigravity / Gemini</text>
+
+            <rect x="188" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+            <circle cx="208" cy="21" r="5" fill="#F97316"/>
+            <text x="222" y="25" fill="#F1F5F9" font-weight="700" font-size="12">Claude Code</text>
+
+            <rect x="376" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+            <circle cx="396" cy="21" r="5" fill="#38BDF8"/>
+            <text x="410" y="25" fill="#F1F5F9" font-weight="700" font-size="12">Cursor IDE</text>
+
+            <rect x="564" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+            <circle cx="584" cy="21" r="5" fill="#10B981"/>
+            <text x="598" y="25" fill="#F1F5F9" font-weight="700" font-size="12">GitHub Copilot / Codex</text>
+
+            <rect x="752" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+            <circle cx="772" cy="21" r="5" fill="#06B6D4"/>
+            <text x="786" y="25" fill="#F1F5F9" font-weight="700" font-size="12">Windsurf / Cascade</text>
+          </g>
+        </g>
+
+        <!-- Connector -->
+        <path d="M500 114V136" stroke="#4F46E5" stroke-width="2" stroke-dasharray="4 4"/>
+        <polygon points="500,144 496,134 504,134" fill="#4F46E5"/>
+
+        <!-- Core Orchestrator -->
+        <g transform="translate(40, 146)">
+          <rect width="920" height="120" rx="20" fill="#0F172A" stroke="#4338CA" stroke-width="1.5"/>
+          <g transform="translate(32, 24)">
+            <rect x="0" y="0" width="38" height="38" rx="10" fill="#6366F1"/>
+            <path d="M12 12C12 10 14 9 16 9H17C19 9 21 10 21 12V21C21 24 19 26 16.5 26C14 26 12 24 12 21V12Z" fill="white"/>
+            <text x="50" y="18" fill="#FFFFFF" font-weight="800" font-size="18">DESIGN UX ULTRA CORE ORCHESTRATOR</text>
+            <text x="50" y="34" fill="#94A3B8" font-family="monospace" font-size="11">SKILL.MD &bull; AUTONOMOUS 5-STAGE COGNITIVE PIPELINE</text>
+          </g>
+
+          <g transform="translate(32, 74)">
+            <rect x="0" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+            <text x="12" y="19" fill="#C7D2FE" font-family="monospace" font-size="11">1. Archetype Diagnosis</text>
+
+            <rect x="174" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+            <text x="186" y="19" fill="#C7D2FE" font-family="monospace" font-size="11">2. Semantic Tokens</text>
+
+            <rect x="348" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+            <text x="360" y="19" fill="#C7D2FE" font-family="monospace" font-size="11">3. Wireframe &amp; IA Flow</text>
+
+            <rect x="522" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+            <text x="534" y="19" fill="#C7D2FE" font-family="monospace" font-size="11">4. Kinetic Polish</text>
+
+            <rect x="696" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+            <text x="708" y="19" fill="#34D399" font-family="monospace" font-size="11">5. Heuristic Audit</text>
+          </g>
+        </g>
+
+        <!-- Connector -->
+        <path d="M150 266V300 M380 266V300 M620 266V300 M850 266V300" stroke="#334155" stroke-width="1.5"/>
+        <polygon points="150,306 147,298 153,298" fill="#818CF8"/>
+        <polygon points="380,306 377,298 383,298" fill="#22D3EE"/>
+        <polygon points="620,306 617,298 623,298" fill="#34D399"/>
+        <polygon points="850,306 847,298 853,298" fill="#F472B6"/>
+
+        <!-- 4 Pillars -->
+        <g transform="translate(40, 310)">
+          <!-- Pillar 1 -->
+          <g transform="translate(0, 0)">
+            <rect width="216" height="200" rx="16" fill="#0D1127" stroke="#3730A3" stroke-width="1.5"/>
+            <rect x="0" y="0" width="216" height="6" rx="3" fill="#6366F1"/>
+            <text x="16" y="32" fill="#A5B4FC" font-family="monospace" font-size="10" letter-spacing="0.1em">PILLAR 01</text>
+            <text x="16" y="54" fill="#FFFFFF" font-weight="700" font-size="16">Dribbble Visuals</text>
+            <line x1="16" y1="82" x2="200" y2="82" stroke="#1E293B" stroke-width="1"/>
+            <text x="16" y="104" fill="#E2E8F0" font-size="11">&bull; Layered Aurora Glows</text>
+            <text x="16" y="124" fill="#E2E8F0" font-size="11">&bull; Frosted Acrylic Glass</text>
+            <text x="16" y="144" fill="#E2E8F0" font-size="11">&bull; Asymmetric Bento Grids</text>
+            <text x="16" y="164" fill="#E2E8F0" font-size="11">&bull; 3D Cursor Tilt Physics</text>
+          </g>
+
+          <!-- Pillar 2 -->
+          <g transform="translate(234, 0)">
+            <rect width="216" height="200" rx="16" fill="#081E29" stroke="#0E7490" stroke-width="1.5"/>
+            <rect x="0" y="0" width="216" height="6" rx="3" fill="#06B6D4"/>
+            <text x="16" y="32" fill="#67E8F9" font-family="monospace" font-size="10" letter-spacing="0.1em">PILLAR 02</text>
+            <text x="16" y="54" fill="#FFFFFF" font-weight="700" font-size="16">Webflow Kinetics</text>
+            <line x1="16" y1="82" x2="200" y2="82" stroke="#1E293B" stroke-width="1"/>
+            <text x="16" y="104" fill="#E2E8F0" font-size="11">&bull; GSAP ScrollTrigger Pacing</text>
+            <text x="16" y="124" fill="#E2E8F0" font-size="11">&bull; Sticky Deck Scrollytelling</text>
+            <text x="16" y="144" fill="#E2E8F0" font-size="11">&bull; Magnetic Cursor Buttons</text>
+            <text x="16" y="164" fill="#E2E8F0" font-size="11">&bull; Fluid clamp() Typography</text>
+          </g>
+
+          <!-- Pillar 3 -->
+          <g transform="translate(468, 0)">
+            <rect width="216" height="200" rx="16" fill="#08221B" stroke="#047857" stroke-width="1.5"/>
+            <rect x="0" y="0" width="216" height="6" rx="3" fill="#10B981"/>
+            <text x="16" y="32" fill="#6EE7B7" font-family="monospace" font-size="10" letter-spacing="0.1em">PILLAR 03</text>
+            <text x="16" y="54" fill="#FFFFFF" font-weight="700" font-size="16">Mockplus UX</text>
+            <line x1="16" y1="82" x2="200" y2="82" stroke="#1E293B" stroke-width="1"/>
+            <text x="16" y="104" fill="#E2E8F0" font-size="11">&bull; Fitts's Law 44px Targets</text>
+            <text x="16" y="124" fill="#E2E8F0" font-size="11">&bull; Hick's Law Chunking</text>
+            <text x="16" y="144" fill="#E2E8F0" font-size="11">&bull; Skeleton Shimmer Feedback</text>
+            <text x="16" y="164" fill="#E2E8F0" font-size="11">&bull; WCAG 2.2 AAA Contrast</text>
+          </g>
+
+          <!-- Pillar 4 -->
+          <g transform="translate(702, 0)">
+            <rect width="218" height="200" rx="16" fill="#220B1D" stroke="#BE185D" stroke-width="1.5"/>
+            <rect x="0" y="0" width="218" height="6" rx="3" fill="#EC4899"/>
+            <text x="16" y="32" fill="#F472B6" font-family="monospace" font-size="10" letter-spacing="0.1em">PILLAR 04</text>
+            <text x="16" y="54" fill="#FFFFFF" font-weight="700" font-size="16">Figma Tokens</text>
+            <line x1="16" y1="82" x2="202" y2="82" stroke="#1E293B" stroke-width="1"/>
+            <text x="16" y="104" fill="#E2E8F0" font-size="11">&bull; 3-Tier Semantic Tokens</text>
+            <text x="16" y="124" fill="#E2E8F0" font-size="11">&bull; Auto Layout Flex/Grid</text>
+            <text x="16" y="144" fill="#E2E8F0" font-size="11">&bull; 6-State Variant Matrix</text>
+            <text x="16" y="164" fill="#E2E8F0" font-size="11">&bull; 8pt Modular Spatial Grid</text>
+          </g>
+        </g>
+
+        <!-- Connector -->
+        <path d="M150 510V540 M380 510V540 M620 510V540 M850 510V540" stroke="#334155" stroke-width="1.5"/>
+        <path d="M150 540H850" stroke="#334155" stroke-width="1.5"/>
+        <path d="M500 540V556" stroke="#10B981" stroke-width="2"/>
+        <polygon points="500,562 496,554 504,554" fill="#10B981"/>
+
+        <!-- Delivery Tier -->
+        <g transform="translate(40, 566)">
+          <rect width="920" height="84" rx="16" fill="#0B1329" stroke="#1E293B" stroke-width="1.5"/>
+          <g transform="translate(24, 18)">
+            <text x="0" y="16" fill="#34D399" font-weight="700" font-size="13">PRODUCTION ARTIFACTS &amp; DELIVERY OUTPUTS</text>
+            <text x="0" y="36" fill="#94A3B8" font-size="11">Zero-slop, hardened code ready for production deployment across Next.js, React, Tailwind, and HTML5.</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

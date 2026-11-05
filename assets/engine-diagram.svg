@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="1000" height="680" fill="none">
+  <title>Design UX Ultra Engine Architecture Diagram</title>
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="diagBg" x1="0" y1="0" x2="1000" y2="680" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Core Header Gradient -->
+    <linearGradient id="coreHeaderGrad" x1="100" y1="120" x2="900" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#164E63"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="diagGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .diag-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Plus Jakarta Sans", sans-serif; font-weight: 800; }
+    .diag-head { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Plus Jakarta Sans", sans-serif; font-weight: 700; }
+    .diag-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Plus Jakarta Sans", sans-serif; font-weight: 400; }
+    .diag-mono { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "JetBrains Mono", monospace; font-weight: 500; }
+  </style>
+
+  <!-- 0. Canvas Background -->
+  <rect width="1000" height="680" rx="24" fill="url(#diagBg)"/>
+  <rect width="1000" height="680" rx="24" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- ======================================================================
+       1. TOP TIER: CODING AI AGENTS (INGRESS)
+       ====================================================================== -->
+  <g transform="translate(40, 28)">
+    <text x="0" y="16" fill="#64748B" class="diag-mono" font-size="11" letter-spacing="0.1em">01 / INGRESS TIER • MULTI-AGENT INVOCATION</text>
+    
+    <!-- Agent Badges -->
+    <g transform="translate(0, 28)">
+      <!-- Antigravity -->
+      <rect x="0" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="20" cy="21" r="5" fill="#818CF8"/>
+      <text x="34" y="25" fill="#F1F5F9" class="diag-head" font-size="12">Antigravity / Gemini</text>
+
+      <!-- Claude Code -->
+      <rect x="188" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="208" cy="21" r="5" fill="#F97316"/>
+      <text x="222" y="25" fill="#F1F5F9" class="diag-head" font-size="12">Claude Code</text>
+
+      <!-- Cursor -->
+      <rect x="376" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="396" cy="21" r="5" fill="#38BDF8"/>
+      <text x="410" y="25" fill="#F1F5F9" class="diag-head" font-size="12">Cursor IDE</text>
+
+      <!-- GitHub Copilot / Codex -->
+      <rect x="564" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="584" cy="21" r="5" fill="#10B981"/>
+      <text x="598" y="25" fill="#F1F5F9" class="diag-head" font-size="12">GitHub Copilot / Codex</text>
+
+      <!-- Windsurf -->
+      <rect x="752" y="0" width="168" height="42" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="772" cy="21" r="5" fill="#06B6D4"/>
+      <text x="786" y="25" fill="#F1F5F9" class="diag-head" font-size="12">Windsurf / Cascade</text>
+    </g>
+  </g>
+
+  <!-- Flow Connector 1 (Agents to Core) -->
+  <path d="M500 114V136" stroke="#4F46E5" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="500,144 496,134 504,134" fill="#4F46E5"/>
+
+  <!-- ======================================================================
+       2. MIDDLE TIER: DESIGN UX ULTRA CORE ENGINE (ORCHESTRATOR)
+       ====================================================================== -->
+  <g transform="translate(40, 146)">
+    <rect width="920" height="120" rx="20" fill="url(#coreHeaderGrad)" stroke="#4338CA" stroke-width="1.5"/>
+
+    <g transform="translate(32, 24)">
+      <!-- Left Engine Brand -->
+      <rect x="0" y="0" width="38" height="38" rx="10" fill="#6366F1"/>
+      <path d="M12 12C12 10 14 9 16 9H17C19 9 21 10 21 12V21C21 24 19 26 16.5 26C14 26 12 24 12 21V12Z" fill="white"/>
+      <path d="M21 12C21 10 23 9 25 9H26C28 9 30 10 30 12V21C30 27 24 30 19 30C16 30 14 29 13 28" stroke="white" stroke-width="1.5"/>
+
+      <text x="50" y="18" fill="#FFFFFF" class="diag-title" font-size="18">DESIGN UX ULTRA CORE ORCHESTRATOR</text>
+      <text x="50" y="34" fill="#94A3B8" class="diag-mono" font-size="11">SKILL.MD • AUTONOMOUS 5-STAGE COGNITIVE PIPELINE</text>
+    </g>
+
+    <!-- 5 Pipeline Steps Chips -->
+    <g transform="translate(32, 74)">
+      <!-- Step 1 -->
+      <rect x="0" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+      <text x="12" y="19" fill="#C7D2FE" class="diag-mono" font-size="11">1. Archetype Diagnosis</text>
+
+      <!-- Step 2 -->
+      <rect x="174" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+      <text x="12" y="19" fill="#C7D2FE" class="diag-mono" font-size="11" transform="translate(174,0)">2. Semantic Tokens</text>
+
+      <!-- Step 3 -->
+      <rect x="348" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+      <text x="12" y="19" fill="#C7D2FE" class="diag-mono" font-size="11" transform="translate(348,0)">3. Wireframe &amp; IA Flow</text>
+
+      <!-- Step 4 -->
+      <rect x="522" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+      <text x="12" y="19" fill="#C7D2FE" class="diag-mono" font-size="11" transform="translate(522,0)">4. Kinetic Polish</text>
+
+      <!-- Step 5 -->
+      <rect x="696" y="0" width="160" height="30" rx="8" fill="#0B1329" stroke="#3730A3" stroke-width="1"/>
+      <text x="12" y="19" fill="#34D399" class="diag-mono" font-size="11" transform="translate(696,0)">5. Heuristic Audit</text>
+    </g>
+  </g>
+
+  <!-- Flow Connector 2 (Core to 4 Pillars) -->
+  <path d="M150 266V300 M380 266V300 M620 266V300 M850 266V300" stroke="#334155" stroke-width="1.5"/>
+  <polygon points="150,306 147,298 153,298" fill="#818CF8"/>
+  <polygon points="380,306 377,298 383,298" fill="#22D3EE"/>
+  <polygon points="620,306 617,298 623,298" fill="#34D399"/>
+  <polygon points="850,306 847,298 853,298" fill="#F472B6"/>
+
+  <!-- ======================================================================
+       3. THE 4 FOUNDATIONAL PILLARS
+       ====================================================================== -->
+  <g transform="translate(40, 310)">
+    
+    <!-- PILLAR 1: DRIBBBLE -->
+    <g transform="translate(0, 0)">
+      <rect width="216" height="200" rx="16" fill="#0D1127" stroke="#3730A3" stroke-width="1.5"/>
+      <rect x="0" y="0" width="216" height="6" rx="3" fill="#6366F1"/>
+      
+      <text x="16" y="32" fill="#A5B4FC" class="diag-mono" font-size="10" letter-spacing="0.1em">PILLAR 01</text>
+      <text x="16" y="54" fill="#FFFFFF" class="diag-title" font-size="16">Dribbble Visuals</text>
+      <text x="16" y="70" fill="#64748B" class="diag-mono" font-size="10">Visual Flair &amp; Depth</text>
+
+      <line x1="16" y1="82" x2="200" y2="82" stroke="#1E293B" stroke-width="1"/>
+
+      <text x="16" y="104" fill="#E2E8F0" class="diag-body" font-size="11">• Layered Aurora Glows</text>
+      <text x="16" y="124" fill="#E2E8F0" class="diag-body" font-size="11">• Frosted Acrylic Glass</text>
+      <text x="16" y="144" fill="#E2E8F0" class="diag-body" font-size="11">• Asymmetric Bento Grids</text>
+      <text x="16" y="164" fill="#E2E8F0" class="diag-body" font-size="11">• 3D Cursor Tilt Physics</text>
+      <text x="16" y="184" fill="#818CF8" class="diag-mono" font-size="10">references/dribbble-visual-engine.md</text>
+    </g>
+
+    <!-- PILLAR 2: WEBFLOW -->
+    <g transform="translate(234, 0)">
+      <rect width="216" height="200" rx="16" fill="#081E29" stroke="#0E7490" stroke-width="1.5"/>
+      <rect x="0" y="0" width="216" height="6" rx="3" fill="#06B6D4"/>
+      
+      <text x="16" y="32" fill="#67E8F9" class="diag-mono" font-size="10" letter-spacing="0.1em">PILLAR 02</text>
+      <text x="16" y="54" fill="#FFFFFF" class="diag-title" font-size="16">Webflow Kinetics</text>
+      <text x="16" y="70" fill="#64748B" class="diag-mono" font-size="10">Scroll Motion &amp; Flow</text>
+
+      <line x1="16" y1="82" x2="200" y2="82" stroke="#1E293B" stroke-width="1"/>
+
+      <text x="16" y="104" fill="#E2E8F0" class="diag-body" font-size="11">• GSAP ScrollTrigger Pacing</text>
+      <text x="16" y="124" fill="#E2E8F0" class="diag-body" font-size="11">• Sticky Deck Scrollytelling</text>
+      <text x="16" y="144" fill="#E2E8F0" class="diag-body" font-size="11">• Magnetic Cursor Buttons</text>
+      <text x="16" y="164" fill="#E2E8F0" class="diag-body" font-size="11">• Fluid clamp() Typography</text>
+      <text x="16" y="184" fill="#22D3EE" class="diag-mono" font-size="10">references/webflow-interaction-matrix.md</text>
+    </g>
+
+    <!-- PILLAR 3: MOCKPLUS -->
+    <g transform="translate(468, 0)">
+      <rect width="216" height="200" rx="16" fill="#08221B" stroke="#047857" stroke-width="1.5"/>
+      <rect x="0" y="0" width="216" height="6" rx="3" fill="#10B981"/>
+      
+      <text x="16" y="32" fill="#6EE7B7" class="diag-mono" font-size="10" letter-spacing="0.1em">PILLAR 03</text>
+      <text x="16" y="54" fill="#FFFFFF" class="diag-title" font-size="16">Mockplus UX</text>
+      <text x="16" y="70" fill="#64748B" class="diag-mono" font-size="10">Cognitive Ergonomics</text>
+
+      <line x1="16" y1="82" x2="200" y2="82" stroke="#1E293B" stroke-width="1"/>
+
+      <text x="16" y="104" fill="#E2E8F0" class="diag-body" font-size="11">• Fitts's Law 44px Targets</text>
+      <text x="16" y="124" fill="#E2E8F0" class="diag-body" font-size="11">• Hick's Law Chunking</text>
+      <text x="16" y="144" fill="#E2E8F0" class="diag-body" font-size="11">• Skeleton Shimmer Feedback</text>
+      <text x="16" y="164" fill="#E2E8F0" class="diag-body" font-size="11">• WCAG 2.2 AAA Contrast</text>
+      <text x="16" y="184" fill="#34D399" class="diag-mono" font-size="10">references/mockplus-ux-heuristics.md</text>
+    </g>
+
+    <!-- PILLAR 4: FIGMA -->
+    <g transform="translate(702, 0)">
+      <rect width="218" height="200" rx="16" fill="#220B1D" stroke="#BE185D" stroke-width="1.5"/>
+      <rect x="0" y="0" width="218" height="6" rx="3" fill="#EC4899"/>
+      
+      <text x="16" y="32" fill="#F472B6" class="diag-mono" font-size="10" letter-spacing="0.1em">PILLAR 04</text>
+      <text x="16" y="54" fill="#FFFFFF" class="diag-title" font-size="16">Figma Tokens</text>
+      <text x="16" y="70" fill="#64748B" class="diag-mono" font-size="10">Design System Architecture</text>
+
+      <line x1="16" y1="82" x2="202" y2="82" stroke="#1E293B" stroke-width="1"/>
+
+      <text x="16" y="104" fill="#E2E8F0" class="diag-body" font-size="11">• 3-Tier Semantic Tokens</text>
+      <text x="16" y="124" fill="#E2E8F0" class="diag-body" font-size="11">• Auto Layout Flex/Grid</text>
+      <text x="16" y="144" fill="#E2E8F0" class="diag-body" font-size="11">• 6-State Variant Matrix</text>
+      <text x="16" y="164" fill="#E2E8F0" class="diag-body" font-size="11">• 8pt Modular Spatial Grid</text>
+      <text x="16" y="184" fill="#F472B6" class="diag-mono" font-size="10">references/figma-token-architecture.md</text>
+    </g>
+
+  </g>
+
+  <!-- Flow Connector 3 (4 Pillars to Delivery) -->
+  <path d="M150 510V540 M380 510V540 M620 510V540 M850 510V540" stroke="#334155" stroke-width="1.5"/>
+  <path d="M150 540H850" stroke="#334155" stroke-width="1.5"/>
+  <path d="M500 540V556" stroke="#10B981" stroke-width="2"/>
+  <polygon points="500,562 496,554 504,554" fill="#10B981"/>
+
+  <!-- ======================================================================
+       4. BOTTOM TIER: PRODUCTION DELIVERABLES (EGRESS)
+       ====================================================================== -->
+  <g transform="translate(40, 566)">
+    <rect width="920" height="84" rx="16" fill="#0B1329" stroke="#1E293B" stroke-width="1.5"/>
+
+    <g transform="translate(24, 18)">
+      <text x="0" y="16" fill="#34D399" class="diag-head" font-size="13">PRODUCTION ARTIFACTS &amp; DELIVERY OUTPUTS</text>
+      <text x="0" y="36" fill="#94A3B8" class="diag-body" font-size="11">Zero-slop, hardened code ready for production deployment across Next.js, React, Tailwind, and HTML5.</text>
+    </g>
+
+    <g transform="translate(560, 24)">
+      <rect x="0" y="0" width="105" height="36" rx="8" fill="#1E293B"/>
+      <text x="14" y="22" fill="#E2E8F0" class="diag-mono" font-size="11">17 Templates</text>
+
+      <rect x="115" y="0" width="115" height="36" rx="8" fill="#1E293B"/>
+      <text x="12" y="22" fill="#E2E8F0" class="diag-mono" font-size="11">Tailwind Preset</text>
+
+      <rect x="240" y="0" width="95" height="36" rx="8" fill="#1E293B"/>
+      <text x="14" y="22" fill="#34D399" class="diag-mono" font-size="11">Audit CLI</text>
+    </g>
+  </g>
+
+</svg>
