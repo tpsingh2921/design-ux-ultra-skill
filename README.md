@@ -101,9 +101,40 @@ Once installed, your agent automatically knows how to construct high-end interfa
 
 ---
 
-## 📦 Ready-to-Use Archetypes & Templates
+## 🔥 1,000+ Figma Community Templates & Anti-Vibe Engine
 
-All templates in `templates/` are production-ready, fully responsive, and standalone:
+### Eradicating "Vibe-Coded" AI Slop
+Generic coding AI agents generate "vibe-coded" toy mockups with identical purple glow blobs, fake placeholder cards, and zero domain realism. When you ask them to redesign a website, they make superficial color tweaks without understanding your business model.
+
+**Design UX Ultra Skill completely transforms how agents build and redesign websites**:
+- **Bespoke Domain Realism**: For FinTech, it builds dense ledger tables with status chips; for E-Commerce, it generates sticky buy bars and faceted filters; for DevTools, it integrates interactive CLI terminals and cluster health gauges.
+- **Total Redesign Morphing**: When a user asks to redesign an existing website, the agent extracts the authentic data entities, queries matching archetypes from the 1,000+ catalog, and completely rebuilds the interface to match their exact needs.
+
+### Category Breakdown (1,135 Templates across 13 Categories)
+
+All templates are indexed in [`templates/registry/templates-catalog.json`](templates/registry/templates-catalog.json) and queryable via CLI:
+
+| Category | Templates | Primary Figma / Web Sources | Key Archetypes Covered |
+|---|---|---|---|
+| **Hero Sections** | **105** | Untitled UI, Webflow Winners, Dribbble | Split Hero, Aurora Bento, 3D App Mockup, Terminal, Waitlist |
+| **Navigation & Headers** | **65** | shadcn/ui, Flowbite Pro, Tailwind UI | Floating Island, Multi-column Mega Menu, Command Palette ⌘K |
+| **Feature Grids & Bento** | **135** | Bento UI Kits, Webflow Kinetic, Preline | Asymmetric Bento, Sticky Scrollytelling, Tabbed Deep-Dive |
+| **Dashboards & Panels** | **115** | TailAdmin, Horizon UI, Untitled Enterprise | Executive KPI, Financial Ledger, Cloud Telemetry, CRM Pipeline |
+| **Data Tables & Grids** | **85** | Untitled Tables, shadcn Data-Table | Sortable Paginated Ledger, Status Chip Invoices, Kanban Board |
+| **Pricing & Calculators** | **65** | Untitled Pricing, Cruip SaaS Kits | Tier Monthly/Annual Switcher, Interactive Slider, Feature Matrix |
+| **Testimonials & Proof** | **75** | Relume Library, Dribbble Wall | Wall of Love Masonry, Verified Avatar Stack, G2 Badge Strip |
+| **Forms & Onboarding** | **85** | Mockplus RP, Untitled Forms, shadcn | 3-Step Wizard Flow, KYC Identity Verification, Slide-over Settings |
+| **E-Commerce & Retail** | **95** | Shopify Figma Kits, Flowbite Commerce | Product Detail Showcase, Sticky Buy Bar, Slide-over Cart |
+| **Footers & CTAs** | **65** | Untitled Footers, Webflow Clean | 4-Column Directory, Aurora Conversion Banner, System Status |
+| **Portfolios & Studios** | **75** | Webflow UX Portfolios, Dribbble Top | Full-Screen Project Reel, Editorial Kinetic Typography, Honors |
+| **Developer & API Docs** | **65** | Stripe/Vercel Clones, shadcn Docs | Interactive API Playground, 3-Column Endpoint Reference |
+| **Interactive Primitives** | **105** | shadcn Primitives, Radix, Apple HIG | Tactile Magnetic Buttons, Frosted Acrylic Cards, Dialog Modals |
+
+---
+
+## 📦 Ready-to-Use Standalone Core Templates
+
+All standalone templates in `templates/` are production-ready, fully responsive, and zero-dependency:
 
 | Archetype / Template | File Location | Key Inspiration |
 |---|---|---|
@@ -132,7 +163,15 @@ All templates in `templates/` are production-ready, fully responsive, and standa
 The repository includes a zero-dependency Node.js CLI tool:
 
 ```bash
-# List all templates
+# Search across 1,135 Figma Community templates by keyword or domain
+npx design-ux-ultra search "fintech"
+npx design-ux-ultra search "bento"
+npx design-ux-ultra search "dashboard"
+
+# View all 13 categories and counts
+npx design-ux-ultra categories
+
+# List core standalone templates
 npx design-ux-ultra list
 
 # Scaffold an archetype into your project
@@ -146,7 +185,7 @@ npx design-ux-ultra audit public/index.html
 npx design-ux-ultra export-tokens css styles/tokens.css
 
 # Install skill to another coding agent
-npx design-ux-ultra install claude
+npx design-ux-ultra install antigravity   # or claude / cursor
 ```
 
 ---

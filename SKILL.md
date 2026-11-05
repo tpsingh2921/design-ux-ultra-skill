@@ -1,30 +1,30 @@
 ---
 name: design-ux-ultra-skill
-description: "World-class UI/UX design engine for coding AI agents. Synthesizes trending Dribbble visual aesthetics, award-winning Made in Webflow kinetic interactions, Mockplus UX wireframing heuristics, and Figma Community auto-layout token design systems. Use whenever designing, building, revamping, styling, or auditing web interfaces, landing pages, SaaS dashboards, or component systems."
-version: 1.0.0
+description: "World-class UI/UX design engine for coding AI agents with 1,000+ Figma Community templates. Eliminates vibe-coded AI slop and creates authentic, bespoke, high-converting websites and applications. Synthesizes trending Dribbble visual aesthetics, award-winning Made in Webflow kinetic interactions, Mockplus UX wireframing heuristics, and Figma Community auto-layout token design systems."
+version: 1.1.0
 author: "Tejpal Singh Jodha"
 category: design-ux
 risk: safe
-tags: [ui, ux, web-design, dribbble, webflow, mockplus, figma, design-system, tailwind, gsap, accessibility]
+tags: [ui, ux, web-design, dribbble, webflow, mockplus, figma, design-system, tailwind, gsap, accessibility, anti-vibe-coding]
 tools: [antigravity, claude, codex, cursor, copilot, windsurf]
 license: "MIT"
 ---
 
-# Design UX Ultra Skill
+# Design UX Ultra Skill &bull; 1,000+ Templates Engine
 
-The definitive UI/UX design intelligence skill for AI coding agents. When prompted to create, redesign, or polish a website or application interface, this skill commands the agent to think and code like an elite multidisciplinary design engineer: marrying **Dribbble's** visual flair and micro-delights, **Webflow's** kinetic scrollytelling and fluid responsiveness, **Mockplus's** user-journey heuristics and information architecture, and **Figma Community's** token-driven component architecture.
+The definitive UI/UX design intelligence skill for AI coding agents. When prompted to create, redesign, or polish a website or application interface, this skill commands the agent to eliminate generic, "vibe-coded" amateur mockups and code like an elite Principal Design Engineer: marrying **Dribbble's** visual flair and micro-delights, **Webflow's** kinetic scrollytelling and fluid responsiveness, **Mockplus's** user-journey heuristics and information architecture, and **Figma Community's** 1,000+ component and token-driven architecture.
 
 ---
 
 ## When to Use This Skill
 
 Activate this skill immediately whenever the user asks to:
-- **Build a new website or landing page** from scratch (SaaS, portfolio, e-commerce, developer tool, agency).
-- **Design or revamp a web interface, dashboard, or component** to make it look professional, modern, and high-converting.
+- **Build a new website or landing page** from scratch (SaaS, FinTech, e-commerce, developer tools, portfolio, agency, healthcare, edtech).
+- **Completely redesign an existing website**: Transform it from an amateur or outdated state into a bespoke, authentic production product tailored specifically to the user's domain and needs (Zero "vibe-coded" feel).
+- **Access and compose from 1,000+ Figma Community templates** across 13 major categories (`templates/registry/templates-catalog.json`).
 - **Implement animations, micro-interactions, or kinetic scroll effects** (Webflow/GSAP style).
 - **Establish or audit a design system**, design tokens, typography scale, or color palette (Figma-level tokenization).
 - **Improve UI/UX, usability, navigation, or visual hierarchy** using proven UX heuristics (Mockplus/Nielsen Norman).
-- **Eliminate generic, template-looking ("slop") UI** and replace it with bespoke, tactile, spatial interfaces.
 
 ---
 

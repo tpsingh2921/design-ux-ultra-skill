@@ -13,12 +13,6 @@
       <stop offset="50%" stop-color="#6366F1"/>
       <stop offset="100%" stop-color="#06B6D4"/>
     </linearGradient>
-
-    <!-- Core Star Accent -->
-    <linearGradient id="starGrad" x1="112" y1="92" x2="144" y2="132" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#38BDF8"/>
-    </linearGradient>
   </defs>
 
   <!-- Base Squircle Container -->
@@ -33,7 +27,4 @@
 
   <!-- Kinetic Bottom Loop of "U" -->
   <path d="M64 136C64 171 93 200 128 200C163 200 192 171 192 136H160C160 154 146 168 128 168C110 168 96 154 96 136H64Z" fill="url(#ultraGrad)"/>
-
-  <!-- Central Intelligence Core (4-Point Diamond Spark) -->
-  <path d="M128 92C128 103 137 112 148 112C137 112 128 121 128 132C128 121 119 112 108 112C119 112 128 103 128 92Z" fill="url(#starGrad)"/>
 </svg>
