@@ -9,7 +9,7 @@ Install and activate **Design UX Ultra Skill** in under 2 minutes across any cod
 ### Option A: Install via Antigravity / Gemini CLI
 ```bash
 # Clone the repository
-git clone https://github.com/tpsingh2101/design-ux-ultra-skill.git
+git clone https://github.com/tpsingh2921/design-ux-ultra-skill.git
 
 # Install directly into Antigravity global skills directory
 node bin/design-ux-ultra.js install antigravity

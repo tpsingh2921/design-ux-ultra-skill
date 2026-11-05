@@ -71,7 +71,7 @@ Base coding AI agents often generate flat, generic, outdated ("slop") frontend m
 ### Option 1: Install into Antigravity / Gemini CLI
 ```bash
 # Clone the repository
-git clone https://github.com/tpsingh2101/design-ux-ultra-skill.git
+git clone https://github.com/tpsingh2921/design-ux-ultra-skill.git
 cd design-ux-ultra-skill
 
 # Run the installer
