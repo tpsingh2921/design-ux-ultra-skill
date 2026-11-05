@@ -1,7 +1,7 @@
 {
   "name": "design-ux-ultra-skill",
-  "version": "1.0.0",
-  "description": "World-class UI/UX design engine for coding AI agents. Synthesizes Dribbble visual flair, Made in Webflow kinetic interactions, Mockplus UX heuristics, and Figma Community auto-layout token systems.",
+  "version": "1.2.0",
+  "description": "World-class UI/UX design engine for coding AI agents with 1,425+ Figma Community & Bootstrap 5 templates. Synthesizes Dribbble visual flair, Made in Webflow kinetics, Bootstrap 5 responsive grid layouts, Mockplus UX heuristics, and Figma token systems.",
   "main": "scripts/scaffold-ui.js",
   "bin": {
     "design-ux-ultra": "bin/design-ux-ultra.js"

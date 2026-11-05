@@ -11,9 +11,10 @@ When asked to build, modify, or enhance any web interface, landing page, compone
 ### 1. Zero Generic UI ("No Vibe-Coded Slop" Directive)
 - **Never produce generic Bootstrap/default Tailwind mockups** with flat gray boxes, lifeless 12px rounded cards, or unstyled system buttons.
 - **Never use generic fake placeholder vibes**: Replace toy designs with authentic domain data (real SaaS metrics, actual B2B tiered pricing, genuine checkout flows, deep developer terminal logs).
-- Infuse every design with the **Design UX Ultra 4-Pillar DNA**:
+- Infuse every design with the **Design UX Ultra 5-Pillar DNA**:
   - Dribbble visual richness (aurora glows, frosted glassmorphism, bento grids, subtle gradients).
   - Webflow kinetic interactions (spring transitions, smooth reveals, magnetic buttons, fluid clamp typography).
+  - Bootstrap 5 responsive layout engineering (12-column flex containers, offcanvas drawers, floating labels, `--bs-*` tokens).
   - Mockplus UX heuristics (Fitts's Law CTAs, Hick's Law grouping, clear feedback states, skeletons, WCAG AA contrast).
   - Figma Community token architecture (3-tier tokens, 8pt spacing grid, 6-state variant matrices).
 
@@ -21,7 +22,7 @@ When asked to build, modify, or enhance any web interface, landing page, compone
 When a user asks to **redesign** a website:
 - **Do NOT make minor superficial tweaks**. Completely transform the page architecture:
   1. Extract the user's authentic domain entities (products, metrics, users, transactions).
-  2. Map them to archetypes from the **1,000+ Figma Community Templates Catalog** (`templates/registry/templates-catalog.json`).
+  2. Map them to archetypes from the **1,425+ Figma Community & Bootstrap Templates Catalog** (`templates/registry/templates-catalog.json`).
   3. Rebuild the visual hierarchy from the ground up: establish a high-impact hero, asymmetric bento showcase, social proof, interactive pricing calculator, and fluid clamp typography.
   4. Ensure the resulting site looks like an authentic, high-budget, bespoke product custom-crafted by a principal design studio.
 

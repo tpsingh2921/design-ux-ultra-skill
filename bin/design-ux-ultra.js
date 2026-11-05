@@ -6,13 +6,13 @@ const { scaffold, TEMPLATES_MAP } = require('../scripts/scaffold-ui');
 const { auditFile } = require('../scripts/audit-design');
 const { exportTokens } = require('../scripts/export-figma-tokens');
 
-const VERSION = '1.1.0';
+const VERSION = '1.2.0';
 
 function showHelp() {
   console.log(`
 \x1b[1m\x1b[35m╔════════════════════════════════════════════════════════════╗
 ║             DESIGN UX ULTRA SKILL CLI (v${VERSION})            ║
-║  1,000+ Figma Community Templates & Anti-Vibe Engine       ║
+║  1,425+ Figma Community & Bootstrap Templates Engine       ║
 ╚════════════════════════════════════════════════════════════╝\x1b[0m
 
 \x1b[1mUsage:\x1b[0m
@@ -20,8 +20,8 @@ function showHelp() {
 
 \x1b[1mCommands:\x1b[0m
   \x1b[32mlist\x1b[0m                          List standalone core templates & archetypes
-  \x1b[32mcategories\x1b[0m                    View all 13 categories across 1,000+ Figma templates
-  \x1b[32msearch <query>\x1b[0m                Search 1,135 Figma templates by keyword, domain, or archetype
+  \x1b[32mcategories\x1b[0m                    View all 15 categories across 1,425+ templates
+  \x1b[32msearch <query>\x1b[0m                Search 1,425 templates by keyword, domain, or archetype
   \x1b[32mscaffold <template> [output]\x1b[0m   Copy a production-ready archetype into your project
   \x1b[32maudit <file>\x1b[0m                  Audit a webpage/component against UX & accessibility heuristics
   \x1b[32mexport-tokens [format] [out]\x1b[0m  Export Figma design tokens as CSS variables or JSON
@@ -43,7 +43,7 @@ function listTemplates() {
   for (const [key, relPath] of Object.entries(TEMPLATES_MAP)) {
     console.log(`  \x1b[32m${key.padEnd(18)}\x1b[0m -> ${relPath}`);
   }
-  console.log('\n\x1b[35mTo search the full 1,135 Figma Community templates catalog:\x1b[0m');
+  console.log('\n\x1b[35mTo search the full 1,425 Figma Community & Bootstrap templates catalog:\x1b[0m');
   console.log('  \x1b[33mdesign-ux-ultra search <keyword>\x1b[0m or \x1b[33mdesign-ux-ultra categories\x1b[0m\n');
 }
 
@@ -54,7 +54,7 @@ function showCategories() {
     return;
   }
   const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf-8'));
-  console.log(`\n\x1b[1m\x1b[36m=== 1,000+ Figma Community Templates Catalog (${catalog.meta.total_count} Total) ===\x1b[0m\n`);
+  console.log(`\n\x1b[1m\x1b[36m=== 1,425+ Figma Community & Bootstrap Templates Catalog (${catalog.meta.total_count} Total) ===\x1b[0m\n`);
   
   catalog.categories.forEach((cat, idx) => {
     console.log(`  \x1b[32m${String(idx + 1).padStart(2, '0')}. ${cat.name.padEnd(30)}\x1b[0m : \x1b[1m${cat.count} templates\x1b[0m`);

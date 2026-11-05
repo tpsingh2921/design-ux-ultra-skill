@@ -5,7 +5,7 @@ When Claude Code is asked to build, polish, or rewrite any user interface, webpa
 - Follow the 5-step workflow defined in `SKILL.md`:
   1. Archetype diagnosis (SaaS, Agency, E-commerce, Enterprise).
   2. Establish semantic tokens from `templates/design-tokens/tokens.json`.
-  3. Wireframe information architecture with Z-pattern or F-pattern.
+  3. Wireframe information architecture with Z-pattern or F-pattern (using flex/grid or Bootstrap 12-column layouts).
   4. Inject Webflow kinetic interactions and Dribbble visual polish.
   5. Audit accessibility against WCAG AA heuristics.
 
